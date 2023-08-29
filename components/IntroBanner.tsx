@@ -22,13 +22,20 @@ export default function Banner() {
                 Deze week biedt jullie de gelegenheid om verbinding, plezier en
                 groei te ervaren en jullie onderlinge band te versterken.
               </p>
+              <div className="mt-10 flex">
+                <a
+                  href="#"
+                  className="rounded-md bg-[#AE8466] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+                  Get to know us!
+                </a>
+              </div>
             </div>
           </div>
         </div>
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
-            className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-            src="/group_picture.jpg"
+            className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 h-[35rem]"
+            src="/WhatToExpect.jpg"
             alt=""
           />
         </div>

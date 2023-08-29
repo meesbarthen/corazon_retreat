@@ -7,7 +7,7 @@ const stats = [
 
 export default function MoederDochter() {
   return (
-    <div className="bg-[#A8C0BF] py-4 sm:py-32">
+    <div className="bg-[#F4F3ED] py-4 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-4">
@@ -17,8 +17,8 @@ export default function MoederDochter() {
                 src="/merel-cornelie.jpg"
                 alt=""
               />
-              <figure className="relative isolate">
-                <blockquote className="mt-6 text-xl font-semibold leading-8 text-white mt-40">
+              <figure className="relative isolate mt-40">
+                <blockquote className="mt-6 text-xl font-semibold leading-8 text-white">
                   <p>
                     “Door onze unieke moeder-dochter reis ontdekken we samen de
                     essentie van ware verbinding.”
@@ -62,7 +62,7 @@ export default function MoederDochter() {
             <div className="mt-10 flex">
               <a
                 href="#"
-                className="rounded-md bg-[#AE4B6D] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+                className="rounded-md bg-[#AE8466] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
                 Get to know us!
               </a>
             </div>

@@ -9,6 +9,12 @@ const navigation = [
   // { name: "Company", href: "#" },
 ];
 
+const navigation2 = [
+  { name: "Accommodation", href: "#" },
+  { name: "Contact", href: "#" },
+  // { name: "Retreats", href: "#" },
+];
+
 export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -37,11 +43,16 @@ export default function Hero() {
           </div>
 
           <div className="flex lg:flex-1 lg:justify-end items-center">
-            {/* <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-white lg:mr-4">
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a> */}
+            <div className="hidden lg:flex lg:gap-x-12">
+              {navigation2.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-sm font-semibold leading-6 text-white">
+                  {item.name}
+                </a>
+              ))}
+            </div>
             <div className="lg:hidden">
               <button
                 type="button"

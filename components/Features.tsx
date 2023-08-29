@@ -41,7 +41,7 @@ export default function Features() {
         </div>
         <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
           {features.map((item) => (
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4" key={item.title}>
               <img
                 src="/Corazon_BeeldmerkBruin.png"
                 alt=""

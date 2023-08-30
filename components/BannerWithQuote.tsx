@@ -42,7 +42,7 @@ export default function BannerWithQuote({
               />
               <figure className="relative isolate mt-40">
                 <blockquote className="mt-6 text-xl font-semibold leading-8 text-white">
-                  <p>{quote}</p>
+                  <p>&quot;{quote}&quot;</p>
                 </blockquote>
                 <figcaption className="mt-6 text-sm leading-6 text-gray-300">
                   <strong className="font-semibold text-white">

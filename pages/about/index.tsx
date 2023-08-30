@@ -1,10 +1,15 @@
-import CTASection from "@/components/CTASection";
+import SideImageContentBanner from "@/components/SideImageContentBanner";
 import BannerWithQuote from "@/components/BannerWithQuote";
 
 export default function index() {
   return (
     <div className="">
-      <CTASection />
+      <SideImageContentBanner
+        title="About Corazón"
+        content="Corazón organiseert retreats voor moeders en dochters (minimale leeftijd 21 jaar) in een veilige omgeving op een prachtig locatie op Ibiza. In 2021 wisten wij, Cornelie en Merel (moeder en dochter), dat als je iets doet vanuit je hart, er niks mis kan gaan. De keuzes die je vanuit je hart maakt zijn namelijk altijd zuiver en dienend. Zo is Corazón tot stand gekomen: echt vanuit liefde. Corazón is Spaans voor hart, maar ook liefste, lieverd, lieveling, bloedpomp, schat en beminde. Daarnaast zit het woord ‘zon’ in de naam, dat voor ons het licht boven ons symboliseert. Het licht dat staat voor: God, ons hogere zelf, innerlijke wijsheid, het goddelijke in jezelf, intuïtie, hoe je het ook wilt noemen. Omdat onze retreats worden georganiseerd op ons favoriete plekje op Ibiza, konden we niet anders dan voor een Spaanse naam gaan."
+        showButton={false}
+        imageSrc="/WhatToExpect.jpg"
+      />
       <BannerWithQuote
         imagePosition="left" // or "right"
         imageSrc="/Cornelie.jpg"

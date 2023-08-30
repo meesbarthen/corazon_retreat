@@ -7,9 +7,8 @@ export default function index() {
   return (
     <div className="">
       <PictureHalfScreen />
-      <ColorBanner />
+      {/* <ColorBanner /> */}
       <Contact />
-      <FAQ />
     </div>
   );
 }

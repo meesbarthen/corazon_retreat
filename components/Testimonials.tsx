@@ -26,8 +26,8 @@ const testimonials = [
   {
     title: "Homecoming retreat Ibiza",
     text: "Cornelie echt de gastvrouw, de extreem gevoelige en liefdevolle moeder, al snel was haar bijnaam Maria door de extreme hoeveelheid liefde die ze kon geven aan ons allemaal. Ook bracht ze een gevoel van veiligheid en geborgenheid hierdoor voelde ik me comfortabel om me kwetsbaar op te stellen en echt de diepte in te gaan. Respect, warmte, liefde en zachtheid bleken de kernwaarden van onze groep te zijn, een overvloed van vrouwelijke energie, dit heeft voor mij een bijzonder helende werking gehad. Naast de mentale/emotionele heling, was er ook veel aandacht voor fysieke heling, Lotte heeft 3 keer per dag heerlijk voor ons gekookt. Ik had nog nooit 5 dagen lang zo gezond en voedzaam gegeten en wat doet dat wonderen voor je lijf en energie. Wat een magische, liefdevolle en helende ervaring op een prachtige plek. Ik voelde me zo verwend, verzorgd, veilig en geliefd! Tijdens het retreat was er een perfect balans in aandacht voor Body, Mind & Soul: Mijn body is aan het werk gezet tijdens de hikes, ontspannen tijdens de yoga en gevoed met heerlijk eten. Mijn mind is tot rust gekomen tijdens de meditaties en gevuld met waardevolle inzichten tijdens de oefeningen. Mijn soul is opgelicht door liefde, warmte en vertrouwen! Dank jullie wel voor deze bijzondere en onvergetelijke ervaring die mij weer een stapje dichter bij mezelf heeft gebracht en het licht in mij heeft versterkt! Een mooier cadeau had ik mezelf niet kunnen geven!",
-    name: "Anna",
-    avatar: "Anna.jpg",
+    name: "Anne",
+    avatar: "anne.jpeg",
   },
   {
     title: "Hart Aan, Verstand Uit",
@@ -50,7 +50,7 @@ export default function Testimonials() {
             van wat Corazón Retreat werkelijk is.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-5 justify-items-center">
+        <div className="grid gird-cols-1 lg:grid-cols-3 gap-5 justify-items-center">
           {testimonials.map((item) => (
             <div key={item.name}>
               <div className="bg-white shadow-lg p-8 rounded-xl relative text-center mb-8">

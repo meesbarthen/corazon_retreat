@@ -1,15 +1,53 @@
 import SideImageContentBanner from "@/components/SideImageContentBanner";
 import BannerWithQuote from "@/components/BannerWithQuote";
+import QuoteBanner from "@/components/QuoteBanner";
+import ColorBanner from "@/components/ColorBanner";
 
 export default function index() {
   return (
     <div className="">
       <SideImageContentBanner
         title="About Corazón"
-        content="Corazón organiseert retreats voor moeders en dochters (minimale leeftijd 21 jaar) in een veilige omgeving op een prachtig locatie op Ibiza. In 2021 wisten wij, Cornelie en Merel (moeder en dochter), dat als je iets doet vanuit je hart, er niks mis kan gaan. De keuzes die je vanuit je hart maakt zijn namelijk altijd zuiver en dienend. Zo is Corazón tot stand gekomen: echt vanuit liefde. Corazón is Spaans voor hart, maar ook liefste, lieverd, lieveling, bloedpomp, schat en beminde. Daarnaast zit het woord ‘zon’ in de naam, dat voor ons het licht boven ons symboliseert. Het licht dat staat voor: God, ons hogere zelf, innerlijke wijsheid, het goddelijke in jezelf, intuïtie, hoe je het ook wilt noemen. Omdat onze retreats worden georganiseerd op ons favoriete plekje op Ibiza, konden we niet anders dan voor een Spaanse naam gaan."
         showButton={false}
-        imageSrc="/WhatToExpect.jpg"
-      />
+        imageSrc="/about_picture.jpeg">
+        <p>
+          Corazón organiseert retreats voor moeders en dochters (minimale
+          leeftijd 21 jaar) in een veilige omgeving op een prachtig locatie op
+          Ibiza. In 2021 wisten wij, Cornelie en Merel (moeder en dochter), dat
+          als je iets doet vanuit je hart, er niks mis kan gaan. De keuzes die
+          je vanuit je hart maakt zijn namelijk altijd zuiver en dienend. Zo is
+          Corazón tot stand gekomen: echt vanuit liefde. Corazón is Spaans voor
+          hart, maar ook liefste, lieverd, lieveling, bloedpomp, schat en
+          beminde. Daarnaast zit het woord ‘zon’ in de naam, dat voor ons het
+          licht boven ons symboliseert. Het licht dat staat voor: God, ons
+          hogere zelf, innerlijke wijsheid, het goddelijke in jezelf, intuïtie,
+          hoe je het ook wilt noemen. Omdat onze retreats worden georganiseerd
+          op ons favoriete plekje op Ibiza, konden we niet anders dan voor een
+          Spaanse naam gaan.
+        </p>
+      </SideImageContentBanner>
+      <ColorBanner />
+      <QuoteBanner>
+        <div className="flex flex-col justify-center items-center max-w-4xl p-5 text-white">
+          <h5 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-center">
+            Persoonlijke ontwikkeling
+          </h5>
+          <p className="mt-5 text-center">
+            De afgelopen jaren zijn wij veel bezig geweest met persoonlijke
+            ontwikkeling en spiritualiteit, om uiteindelijk te worden wie we nu
+            zijn. Wij zijn diep in onze patronen en trauma’s gedoken en kwamen
+            erachter dat die toch wel heel erg veel op elkaar lijken. Wij zijn
+            beiden zo gegroeid en getransformeerd door het innerlijk werk dat we
+            hebben gedaan en dit willen we heel erg graag met anderen delen. Wij
+            geloven dat het belangrijk is dat we aarden. Dat we ons veilig
+            voelen in onszelf en dat onze ziel zich optimaal kan manifesteren
+            hier op aarde. Dat we ons eigen pad bewandelen, zodat we écht
+            gelukkig zijn. We geloven dat alles met elkaar is verbonden, geaard
+            leven vanuit je hart en core, met de connectie van boven. Dit willen
+            wij jou ook laten ervaren tijdens onze retreats.{" "}
+          </p>
+        </div>
+      </QuoteBanner>
       <BannerWithQuote
         imagePosition="left" // or "right"
         imageSrc="/Cornelie.jpg"

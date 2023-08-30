@@ -12,14 +12,34 @@ export default function Home() {
     <div>
       <Hero />
       <ColorBanner />
-      <QuoteBanner />
+      <QuoteBanner>
+        <p className="text-xl leading-6 text-white p-10 text-center">
+          <strong className="sans_titel">
+            We warmly welcome you to our house and join our mother-daughter
+            retreat this november
+          </strong>
+        </p>
+      </QuoteBanner>
+
       <SideImageContentBanner
         title="Lieve moeder en dochter,"
-        content="Zijn jullie klaar voor een verdiepende, unieke en bijzondere ervaring om jullie moeder-dochterrelatie te versterken? Willen jullie echt waardevolle quality time met elkaar doorbrengen, en ook de tijd nemen om weer verbinding te maken met jullie innerlijke zelf? Verlangen jullie naar rust, tijd voor jezelf en willen jullie nieuwe inzichten krijgen over hoe jullie een leven vol geluk en plezier kunnen leiden? Zijn jullie enthousiast om gedurende 5 dagen plezier te beleven, zowel met elkaar als met andere inspirerende vrouwen? Dan nodigen we jullie van harte uit voor het moeder-dochter Blossom Your Heart Retreat in ons huis. Deze week biedt jullie de gelegenheid om verbinding, plezier en groei te ervaren en jullie onderlinge band te versterken."
+        imageSrc="/first_photo.jpg"
         buttonLabel="Get to know us!"
-        buttonLink="#"
-        imageSrc="/WhatToExpect.jpg"
-      />
+        buttonLink="#">
+        <p>
+          Zijn jullie klaar voor een verdiepende, unieke en bijzondere ervaring
+          om jullie moeder-dochterrelatie te versterken? Willen jullie echt
+          waardevolle quality time met elkaar doorbrengen, en ook de tijd nemen
+          om weer verbinding te maken met jullie innerlijke zelf? Verlangen
+          jullie naar rust, tijd voor jezelf en willen jullie nieuwe inzichten
+          krijgen over hoe jullie een leven vol geluk en plezier kunnen leiden?
+          Zijn jullie enthousiast om gedurende 5 dagen plezier te beleven, zowel
+          met elkaar als met andere inspirerende vrouwen? Dan nodigen we jullie
+          van harte uit voor het moeder-dochter Blossom Your Heart Retreat in
+          ons huis. Deze week biedt jullie de gelegenheid om verbinding, plezier
+          en groei te ervaren en jullie onderlinge band te versterken.
+        </p>
+      </SideImageContentBanner>
 
       <BannerWithQuote
         imageSrc="/merel-cornelie.jpg"

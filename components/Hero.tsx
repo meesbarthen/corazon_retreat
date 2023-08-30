@@ -1,17 +1,18 @@
 import { useState } from "react";
+import Link from "next/link";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "About", href: "#" },
-  { name: "Retreats", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Retreats", href: "/retreats" },
   // { name: "Company", href: "#" },
 ];
 
 const navigation2 = [
-  { name: "Accommodation", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Accommodation", href: "/accommodation" },
+  { name: "Contact", href: "/contact" },
   // { name: "Retreats", href: "#" },
 ];
 
@@ -29,17 +30,16 @@ export default function Hero() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-white">
+                className="font-bold leading-6 text-white">
                 {item.name}
               </a>
             ))}
           </div>
 
           <div className="flex">
-            <a href="#" className="-m-1.5 p-1.5 pt-0">
-              <span className="sr-only">Your Company</span>
-              <img className="h-16 w-auto" src="/corazon-logo-wit.png" alt="" />
-            </a>
+            <Link href="/" className="-m-1.5 p-1.5">
+              <img className="h-12 w-auto" src="/corazon-logo-wit.png" alt="" />
+            </Link>
           </div>
 
           <div className="flex lg:flex-1 lg:justify-end items-center">
@@ -48,7 +48,7 @@ export default function Hero() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-sm font-semibold leading-6 text-white">
+                  className="font-bold leading-6 text-white">
                   {item.name}
                 </a>
               ))}
@@ -73,14 +73,13 @@ export default function Hero() {
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+              <Link href="/" className="-m-1.5 p-1.5">
                 <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                  className="h-12 w-auto"
+                  src="/corazon-logo-wit.png"
                   alt=""
                 />
-              </a>
+              </Link>
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-gray-400"

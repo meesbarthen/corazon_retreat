@@ -55,7 +55,9 @@ export default function Testimonials() {
             <div key={item.name}>
               <div className="bg-white shadow-lg p-8 rounded-xl relative text-center mb-8">
                 <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-white "></div>
-                <h3 className="text-xl font-bold">"{item.title}”</h3>
+                <h3 className="text-xl font-bold">
+                  &ldquo;{item.title}&ldquo;
+                </h3>
                 <p className="text-center text-gray-600 text-sm mt-4 font-sans">
                   ‟{item.text}”
                 </p>

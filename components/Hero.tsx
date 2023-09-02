@@ -1,18 +1,18 @@
-import { useState } from "react";
-import Link from "next/link";
-import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useState } from 'react';
+import Link from 'next/link';
+import { Dialog } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Retreats", href: "/retreats" },
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Retreats', href: '/retreats' },
   // { name: "Company", href: "#" },
 ];
 
 const navigation2 = [
-  { name: "Accommodation", href: "/accommodation" },
-  { name: "Contact", href: "/contact" },
+  { name: 'Accommodation', href: '/accommodation' },
+  { name: 'Contact', href: '/contact' },
   // { name: "Retreats", href: "#" },
 ];
 
@@ -20,17 +20,19 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-[#A8C0BF] h-screen">
+    <div className="bg-[#A8C0BF] md:h-screen">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           className="flex items-center justify-between p-6 pt-4 lg:px-8"
-          aria-label="Global">
+          aria-label="Global"
+        >
           <div className="hidden lg:flex lg:flex-1 lg:gap-x-12">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="font-bold leading-6 text-white">
+                className="font-bold leading-6 text-white"
+              >
                 {item.name}
               </a>
             ))}
@@ -48,7 +50,8 @@ export default function Hero() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="font-bold leading-6 text-white">
+                  className="font-bold leading-6 text-white"
+                >
                   {item.name}
                 </a>
               ))}
@@ -57,7 +60,8 @@ export default function Hero() {
               <button
                 type="button"
                 className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
-                onClick={() => setMobileMenuOpen(true)}>
+                onClick={() => setMobileMenuOpen(true)}
+              >
                 <span className="sr-only">Open main menu</span>
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </button>
@@ -69,7 +73,8 @@ export default function Hero() {
           as="div"
           className="lg:hidden"
           open={mobileMenuOpen}
-          onClose={setMobileMenuOpen}>
+          onClose={setMobileMenuOpen}
+        >
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#A8C0BF] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
             <div className="flex items-center justify-between">
@@ -83,7 +88,8 @@ export default function Hero() {
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-gray-400"
-                onClick={() => setMobileMenuOpen(false)}>
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 <span className="sr-only">Close menu</span>
                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
               </button>
@@ -95,7 +101,8 @@ export default function Hero() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
+                    >
                       {item.name}
                     </a>
                   ))}
@@ -105,7 +112,8 @@ export default function Hero() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
+                    >
                       {item.name}
                     </a>
                   ))}
@@ -116,13 +124,14 @@ export default function Hero() {
         </Dialog>
       </header>
 
-      <div className="relative isolate overflow-hidden pt-14 h-full">
+      <div className="relative isolate  pt-14 md:h-screen">
         <video
           autoPlay
           loop
           muted
-          className="absolute inset-0 -z-10 h-full w-full object-cover"
-          src="/corazon-retreat.mp4"></video>
+          className="absolute inset-0 -z-10  md:h-full w-full object-cover"
+          src="/corazon-retreat.mp4"
+        ></video>
         <div className="mx-auto max-w-6xl py-32 sm:py-48 lg:py-56">
           {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
@@ -159,12 +168,13 @@ export default function Hero() {
         </div>
         <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true">
+          aria-hidden="true"
+        >
           <div
             className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
             style={{
               clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
             }}
           />
         </div>

@@ -1,13 +1,18 @@
-import SideImageContentBanner from "@/components/SideImageContentBanner";
+import SideImageContentBanner from '@/components/SideImageContentBanner';
 
 export default function index() {
   return (
-    <div className="">
+    <div className="bg-[#F2E7D4]">
+      <div className="py-8 px-4 mx-auto max-w-7xl lg:px-6">
+        <h2 className="mb-4 text-3xl sm:text-4xl tracking-tight text-gray-900 font-serif max-w-3xl">
+          Het mother-daughter heart connection retreat
+        </h2>
+      </div>
       <SideImageContentBanner
-        title="Het mother-daughter heart connection retreat"
         buttonLabel="Yes, I'am ready!"
         buttonLink="#"
-        imageSrc="/WhatToExpect.jpg">
+        imageSrc="/WhatToExpect.jpg"
+      >
         <p>Wil jij:</p>
         <ul className="mt-4">
           <li>♥️ De band met je moeder of dochter verdiepen?</li>

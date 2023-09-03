@@ -50,7 +50,9 @@ export default function BannerWithQuote({
               />
               <figure className="relative isolate mt-40">
                 <blockquote className="mt-6 text-xl font-semibold leading-8 text-white">
-                  {quote?.length > 0 ? <p>&quot;{quote}&quot;</p> : null}
+                  {quote && quote?.length > 0 && quote ? (
+                    <p>&quot;{quote}&quot;</p>
+                  ) : null}
                 </blockquote>
                 <figcaption className="mt-6 text-sm leading-6 text-gray-300">
                   <strong className="font-semibold text-white">

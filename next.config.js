@@ -6,8 +6,6 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
-module.exports = nextTranslate();
-
 module.exports = {
   nextConfig,
 };

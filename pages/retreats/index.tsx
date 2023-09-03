@@ -128,6 +128,8 @@ export default function index() {
           </div>
         </div>
       </div>
+      <ColorBanner />
+      <QuoteBanner />
       <SideImageContentBanner
         imageSrc="/merel_with_heart.jpg"
         title=' "Blossom Your Heart Retreat"'

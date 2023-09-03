@@ -17,7 +17,7 @@ export default function Home() {
         <p className="text-xl leading-6 text-white p-10 text-center">
           <strong className="sans_titel">
             We warmly welcome you to our house and join our mother-daughter
-            retreat this november
+            retreat on Ibiza this november
           </strong>
         </p>
       </QuoteBanner>
@@ -27,18 +27,19 @@ export default function Home() {
         buttonLabel="Get to know us!"
         buttonLink="#"
       >
-        <p>
+        <p className="tracking-tight">
           Zijn jullie klaar voor een verdiepende, unieke en bijzondere ervaring
-          om jullie moeder-dochterrelatie te versterken? Willen jullie echt
-          waardevolle quality time met elkaar doorbrengen, en ook de tijd nemen
-          om weer verbinding te maken met jullie innerlijke zelf? Verlangen
-          jullie naar rust, tijd voor jezelf en willen jullie nieuwe inzichten
-          krijgen over hoe jullie een leven vol geluk en plezier kunnen leiden?
-          Zijn jullie enthousiast om gedurende 5 dagen plezier te beleven, zowel
-          met elkaar als met andere inspirerende vrouwen? Dan nodigen we jullie
-          van harte uit voor het moeder-dochter Blossom Your Heart Retreat in
-          ons huis. Deze week biedt jullie de gelegenheid om verbinding, plezier
-          en groei te ervaren en jullie onderlinge band te versterken.
+          om jullie moeder-dochterrelatie te versterken? Willen jullie 5 dagen
+          lang echt waardevolle tijd met elkaar doorbrengen en ook weer
+          verbinding maken met jullie innerlijke zelf? Willen jullie plezier
+          beleven zowel met elkaar als met andere inspirerende vrouwen?
+          Verlangen jullie naar rust, tijd voor jezelf en nieuwe inzichten over
+          een leven vol geluk en vreugde? En lijkt het jullie heerlijk om
+          verwend te worden met onder andere massages, Energetische Healing,
+          boeiende workshops en helend eten? Dan nodigen we jullie van harte uit
+          voor het moeder-dochter Blossom Your Heart Retreat in ons huis op
+          Ibiza. (Deze week biedt jullie de gelegenheid om verbinding, plezier
+          en groei te ervaren en jullie onderlinge band te versterken.)
         </p>
       </SideImageContentBanner>
       <ColorBanner />
@@ -58,19 +59,49 @@ export default function Home() {
       </QuoteBanner>
       <BannerWithQuote
         imageSrc="/merel-cornelie.jpg"
-        title="Welkom"
+        title="Welkom!"
         paragraphs={[
-          'Wij, Cornelie en Merel, moeder en dochter, zijn in 2022 gestart met Corazón Retreat. We organiseren retreats in een veilige omgeving op een prachtige locatie op Ibiza. Onze passie is om vrouwen te helpen een diepere verbinding met zichzelf te vinden en hun innerlijke kracht te ontdekken, zodat ze in staat zijn om hun leven ten volle te leven. Terwijl wij vorig jaar individuele retreats met liefde hebben gegeven, zijn wij nu super enthousiast over ons nieuwe concept: de Moeder- en Dochter retreats.',
+          'Wij, Cornelie en Merel, moeder en dochter, zijn in 2022 gestart met Corazón Retreat. We organiseren retreats in een veilige omgeving op een prachtige locatie op Ibiza. Onze passie is om vrouwen te helpen een diepere verbinding met zichzelf te vinden en hun innerlijke kracht te ontdekken, zodat ze in staat zijn om hun leven ten volle te leven. In 2022 hebben wij met veel liefde retreats voor individuele vrouwen georganiseerd, maar wij hebben nu een nieuw concept, waar we heel enthousiast over zijn, vooral omdat het nog veel dichter bij ons staat: Moeder- en Dochter Retreats.',
           'De afgelopen jaren hebben wij afzonderlijk en samen een hele reis afgelegd, waardoor onze band nog specialer en dieper is geworden. Dat gunnen wij iedereen. Het is namelijk van groot belang om een goede relatie met elkaar te hebben; dit heeft immers een positieve invloed op je hele leven. Daarom kunnen wij niet wachten om dit met jullie te delen.',
-          'De afgelopen jaren ben ik steeds dichter bij mezelf gekomen. Ik leerde naar mijn intuïtie te luisteren, me uit te spreken en bewuste keuzes te maken. Niet altijd makkelijk, maar ik voel me nu authentieker en gelukkiger. Voorheen zette ik mezelf op de achtergrond en negeerde verlangens. Nu geloof ik meer in mezelf en sta ik steviger. Hierdoor ben ik naar mijn idee een leuker mens geworden.',
         ]}
-        actionLink="#"
-        actionLabel="Sample Action"
+        actionLink="/about"
+        actionLabel="Lees meer over ons"
       />
       <ColorBanner />
       <QuoteBanner />
       {/* <CTASection /> */}
-      <Features />
+      <Features
+        colorWay="dark"
+        title="Wat staat je te wachten tijdens het Blossom Your Heart Retreat?"
+        subtitle=" Bij ons retreat draait alles om verbinding met jezelf en anderen. In
+        het bijzonder met moeders en dochters."
+        features={[
+          {
+            title: 'Verbinden',
+            text: 'Op de eerste plaats geloven wij dat je alleen diep kunt verbinden met anderen als je contact kunt maken met jezelf. Als je écht weet wat er in jou leeft. Van daaruit kun je verbinding maken met elkaar, in het bijzonder met je moeder, dochter(s) of andere inspirerende vrouwen. Hier kun je echte sisterhood ervaren. Wij vrouwen hebben elkaar nodig en zijn geen concurrenten van elkaar. Door elkaar te steunen, voelen we ons veel meer gedragen in het leven.',
+          },
+          {
+            title: 'Terugkomen in onze vrouwelijke kracht',
+            text: 'Door rust in jezelf te vinden en weer de veiligheid in je lichaam te voelen, kunnen we terugkeren naar onze zachtheid en vrouwelijkheid. Door middel van dans, yoga en diverse methodes gaan wij weer verbinden met ons gevoel. Alles mag er zijn en we mogen luisteren naar onze innerlijke stem, want daar ligt een schat aan wijsheid.',
+          },
+          {
+            title: 'Self care',
+            text: 'Door middel van massage, Transformational Cupping, meditatie, Energetische Healing, helende maaltijden en drankjes worden jullie op alle vlakken verzorgd. Dit helpt om weer helemaal opgeladen en herboren naar huis terug te keren.',
+          },
+          {
+            title: 'Inzichten opdoen',
+            text: 'Door zelfreflectie, stilte, sharing circles en wandelingen in stilte, krijgen jullie inzichten, die helpen in het leven, zodat bewuste keuzes vanuit het hart gemaakt kunnen worden.',
+          },
+          {
+            title: 'Plezier hebben',
+            text: 'Dit is geen traditioneel retreat. We houden het luchtig en streven naar veel plezier. Wij zijn geen mediators of psychologen, die jullie problemen gaan oplossen. Onze intentie is een onvergetelijke week te bieden met veel plezier, waarbij je verbinding met jezelf en anderen kunt maken.',
+          },
+          {
+            title: 'Op avontuur',
+            text: 'Jullie gaan nieuwe dingen beleven met jezelf en elkaar. Er is nog zoveel te ontdekken! Wees nieuwsgierig en sta open voor nieuwe ervaringen.',
+          },
+        ]}
+      />
       <ColorBanner />
       <QuoteBanner />
       <ImageSwiper

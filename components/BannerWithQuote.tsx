@@ -8,6 +8,7 @@ type BannerWithQuoteProps = {
   actionLink?: string; // made this optional
   actionLabel?: string; // made this optional
   showButton?: boolean;
+  colorWay?: 'light' | 'dark';
 };
 
 export default function BannerWithQuote({
@@ -20,12 +21,17 @@ export default function BannerWithQuote({
   actionLabel,
   imagePosition = 'left',
   showButton = true,
+  colorWay = 'light',
 }: BannerWithQuoteProps) {
   return (
-    <div className="bg-[#F4F3ED] py-4 sm:py-32">
+    <div
+      className={`${
+        colorWay === 'light' ? 'bg-[#F4F3ED]' : 'bg-[#F2E7D4]'
+      }  py-12 sm:py-32]`}
+    >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div
-          className={`mx-auto max-w-2xl grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-24 lg:grid-cols-2 lg:mx-0 lg:max-w-none ${
+          className={`mx-auto grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-24 lg:grid-cols-2 lg:mx-0 lg:max-w-none ${
             imagePosition === 'right' ? 'lg:grid-flow-col-dense' : ''
           }`}
         >
@@ -44,7 +50,7 @@ export default function BannerWithQuote({
               />
               <figure className="relative isolate mt-40">
                 <blockquote className="mt-6 text-xl font-semibold leading-8 text-white">
-                  <p>&quot;{quote}&quot;</p>
+                  {quote?.length > 0 ? <p>&quot;{quote}&quot;</p> : null}
                 </blockquote>
                 <figcaption className="mt-6 text-sm leading-6 text-gray-300">
                   <strong className="font-semibold text-white">
@@ -62,7 +68,7 @@ export default function BannerWithQuote({
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 {title}
               </h1>
-              <div className="max-w-xl font-sans">
+              <div className=" font-sans">
                 {paragraphs.map((para, index) => (
                   <p className="mt-6" key={index}>
                     {para}

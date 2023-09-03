@@ -27,18 +27,18 @@ export default function Header() {
       >
         <div className="hidden lg:flex lg:flex-1 lg:gap-x-12">
           {navigation.map((item) => (
-            <a
+            <Link
               key={item.name}
               href={item.href}
               className="font-bold leading-6 text-white"
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
 
         <div className="flex">
-          <Link href="/" className="-m-1.5 p-1.5">
+          <Link href="/" className="py-1.5 px-4">
             <img className="h-12 w-auto" src="/corazon-logo-wit.png" alt="" />
           </Link>
         </div>
@@ -46,19 +46,19 @@ export default function Header() {
         <div className="flex lg:flex-1 lg:justify-end items-center">
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation2.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
                 className="font-bold leading-6 text-white"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
           <div className="lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
+              className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
@@ -92,24 +92,24 @@ export default function Header() {
             <div className="-my-6">
               <div className="space-y-2 pt-6">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
               <div className="space-y-2 pt-2">
                 {navigation2.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

@@ -11,7 +11,7 @@ export default function index() {
         showButton={false}
         imageSrc="/about_picture.jpeg"
       >
-        <p>
+        <p className="font-sans ">
           Corazón organiseert retreats voor moeders en dochters (minimale
           leeftijd 21 jaar) in een veilige omgeving op een prachtig locatie op
           Ibiza. In 2021 wisten wij, Cornelie en Merel (moeder en dochter), dat
@@ -29,9 +29,19 @@ export default function index() {
       </SideImageContentBanner>
       <ColorBanner />
       <QuoteBanner>
-        <div className="flex flex-col justify-center items-center max-w-4xl py-10 text-white">
+        <div className="flex flex-col">
+          <p className="text-xl leading-6 text-white py-10 text-center">
+            <strong className="sans_titel">
+              The mother-daughter bond is like no other. You fight, you make up,
+              you laugh, you cry. It’s a soul connection that never dies
+            </strong>
+          </p>
+        </div>
+      </QuoteBanner>
+      <div className="bg-[#F4F3ED]">
+        <div className="flex flex-col justify-center items-center max-w-4xl py-10 md:px-16 text-black mx-auto">
           <h5 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-center">
-            Persoonlijke ontwikkeling
+            Onze Reis
           </h5>
           <p className="mt-6 text-center font-sans">
             De afgelopen jaren zijn wij veel bezig geweest met persoonlijke
@@ -48,12 +58,14 @@ export default function index() {
             wij jou ook laten ervaren tijdens onze retreats.{' '}
           </p>
         </div>
-      </QuoteBanner>
+      </div>
+      <ColorBanner />
+      <QuoteBanner />
       <BannerWithQuote
         imagePosition="left" // or "right"
         imageSrc="/Cornelie.jpg"
-        quote="Mijn reis naar binnen bracht me niet alleen dichter bij mezelf, maar ook bij de harten van degenen die ik liefheb."
-        quoteAuthor="Cornelie Barthen"
+        // quote="Mijn reis naar binnen bracht me niet alleen dichter bij mezelf, maar ook bij de harten van degenen die ik liefheb."
+        // quoteAuthor="Cornelie Barthen"
         title="Cornelie"
         paragraphs={[
           'Mijn grootste trots zijn mijn 3 bijzondere kinderen, die mij elke dag heel veel leren en vreugde geven. Na Merels geboorte nam ik de rol van moeder fulltime op me. Terwijl mijn man Tjeerd aan zijn onderneming werkte, zorgde ik voor ons gezin. Binnen 2 jaar werd Tijn geboren en daarna volgde Mees. Ik had mijn handen vol, maar genoot enorm van het moederschap. Rond mijn 40e begon ik aan zelfontwikkeling: opleidingen in NLP, familieopstellingen, gelaatkunde, Transformational Cupping en meer. Tijdens vrijwilligerswerk bij Make-A-Wish ontdekte ik mijn organisatorische talenten en vervulde ik wensen voor ernstig zieke kinderen. Dit was naast het moederschap de mooiste baan ter wereld.',
@@ -61,14 +73,15 @@ export default function index() {
           'De afgelopen jaren ben ik steeds dichter bij mezelf gekomen. Ik leerde naar mijn intuïtie te luisteren, me uit te spreken en bewuste keuzes te maken. Niet altijd makkelijk, maar ik voel me nu authentieker en gelukkiger. Voorheen zette ik mezelf op de achtergrond en negeerde verlangens. Nu geloof ik meer in mezelf en sta ik steviger. Hierdoor ben ik naar mijn idee een leuker mens geworden.',
         ]}
         showButton={false}
+        colorWay="dark"
       />
       <ColorBanner />
       <QuoteBanner />
       <BannerWithQuote
         imagePosition="right" // or "right"
         imageSrc="/merel.jpg"
-        quote="De weg naar binnen is een pad vol uitdagingen, maar aan het eind ervan vind je de pure essentie van wie je werkelijk bent."
-        quoteAuthor="Merel Barthen"
+        // quote="De weg naar binnen is een pad vol uitdagingen, maar aan het eind ervan vind je de pure essentie van wie je werkelijk bent."
+        // quoteAuthor="Merel Barthen"
         title="Merel"
         paragraphs={[
           'In 2020 was ik op Bali, waar ik een tijdje in Ubud verbleef. Mijn ouders kwamen me voor enkele weken opzoeken, en mijn moeder bleef een week langer. Samen verkenden we mijn favoriete plekjes en namen deel aan activiteiten zoals ecstatic dance, yoga en ceremonies.Ik herinner me nog zo goed dat mama daar verschillende keren moest huilen van geluk en ze zei: “Ik heb me nog nooit zo levendig gevoeld.” Toen kwam het idee om samen retreats te gaan geven, omdat wij dit gevoel zo graag met anderen wilden delen.',

@@ -82,7 +82,7 @@ export default function FAQ() {
                   <>
                     <dt>
                       <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900 font-sans">
-                        <span className="text-base font-semibold leading-7">
+                        <span className="text-base font-semibold leading-7 max-w-xs">
                           {faq.question}
                         </span>
                         <span className="ml-6 flex h-7 items-center">
@@ -92,9 +92,10 @@ export default function FAQ() {
                               aria-hidden="true"
                             />
                           ) : (
-                            <HeartIcon
-                              className="h-6 w-6 fill-current text-gray-900"
-                              aria-hidden="true"
+                            <img
+                              src="/Corazon_BeeldmerkBruin.png"
+                              alt=""
+                              className="h-6 w-6 self-center"
                             />
                           )}
                         </span>

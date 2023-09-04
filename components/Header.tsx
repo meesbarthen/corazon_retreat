@@ -1,8 +1,9 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -17,6 +18,12 @@ const navigation2 = [
 ];
 
 export default function Header() {
+  const router = useRouter();
+
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [router.route]);
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -50,6 +57,7 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 className="font-bold leading-6 text-white"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
               </Link>

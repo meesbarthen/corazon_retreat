@@ -11,7 +11,9 @@ import ImageSwiper from '@/components/ImageSwiper';
 export default function Home() {
   return (
     <div>
-      <Hero />
+      <div className="flex h-full">
+        <Hero />
+      </div>
       <ColorBanner />
       <QuoteBanner>
         <p className="text-xl leading-6 text-white p-10 text-center">
@@ -111,10 +113,7 @@ export default function Home() {
             title: 'Homepage Sider Image',
             src: '/homepage-slider1.jpeg',
           },
-          {
-            title: 'Homepage Sider Image',
-            src: '/homepage-slider2.jpeg',
-          },
+
           {
             title: 'Homepage Sider Image',
             src: '/homepage-slider3.jpeg',

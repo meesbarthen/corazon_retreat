@@ -55,26 +55,103 @@ export default function index() {
         >
           <p className="font-bold text-xl">Wilen jullie:</p>
           <ul className="mt-4 flex flex-col gap-1 first-letter tracking-tight">
-            <li>♥️ De band met je moeder of dochter verdiepen?</li>
-            <li>♥️ Meer verbinding met jezelf ervaren?</li>
-            <li>♥️ Vreugde in je leven vergroten?</li>
-            <li>♥️ Even tot rust komen en opladen?</li>
-            <li>♥️ Leren hoe je je diep kunt verbinden met je lichaam?</li>
-            <li>
-              ♥️ Gelijkgestemde vrouwen ontmoeten waarbij je helemaal jezelf
-              kunt zijn?
+            <li className="flex flex-row gap-2">
+              {' '}
+              <img
+                src="/Corazon_BeeldmerkBruin.png"
+                alt=""
+                className="h-6 w-6 self-center"
+              />{' '}
+              De band met je moeder of dochter verdiepen?
             </li>
-            <li>
-              ♥️ Inzichten krijgen om meer vanuit verbinding met jezelf te
-              leven?
+            <li className="flex flex-row gap-2 align-center">
+              {' '}
+              <img
+                src="/Corazon_BeeldmerkBruin.png"
+                alt=""
+                className="h-6 w-6 "
+              />{' '}
+              Meer verbinding met jezelf ervaren?
             </li>
-            <li>♥️ Meer vertrouwen in jezelf ontwikkelen?</li>
-            <li>♥️ Heerlijk in de watten gelegd worden?</li>
-            <li>
-              ♥️ Bewust met je lichaam bezig zijn door gezonde voeding en
-              beweging?
+            <li className="flex flex-row gap-2 align-center">
+              {' '}
+              <img
+                src="/Corazon_BeeldmerkBruin.png"
+                alt=""
+                className="h-6 w-6 self-center"
+              />{' '}
+              Vreugde in je leven vergroten?
             </li>
-            <li>♥️ Iets nieuws ervaren?</li>
+            <li className="flex flex-row gap-2 align-center">
+              {' '}
+              <img
+                src="/Corazon_BeeldmerkBruin.png"
+                alt=""
+                className="h-6 w-6 self-center"
+              />{' '}
+              Even tot rust komen en opladen?
+            </li>
+            <li className="flex flex-row gap-2 align-center">
+              {' '}
+              <img
+                src="/Corazon_BeeldmerkBruin.png"
+                alt=""
+                className="h-6 w-6 self-center"
+              />{' '}
+              Leren hoe je je diep kunt verbinden met je lichaam?
+            </li>
+            <li className="flex flex-row gap-2 align-center">
+              <img
+                src="/Corazon_BeeldmerkBruin.png"
+                alt=""
+                className="h-6 w-6 self-center"
+              />{' '}
+              Gelijkgestemde vrouwen ontmoeten waarbij je helemaal jezelf kunt
+              zijn?
+            </li>
+            <li className="flex flex-row gap-2 align-center">
+              <img
+                src="/Corazon_BeeldmerkBruin.png"
+                alt=""
+                className="h-6 w-6 self-center"
+              />{' '}
+              Inzichten krijgen om meer vanuit verbinding met jezelf te leven?
+            </li>
+            <li className="flex flex-row gap-2 align-center">
+              {' '}
+              <img
+                src="/Corazon_BeeldmerkBruin.png"
+                alt=""
+                className="h-6 w-6 self-center"
+              />{' '}
+              Meer vertrouwen in jezelf ontwikkelen?
+            </li>
+            <li className="flex flex-row gap-2 align-center">
+              {' '}
+              <img
+                src="/Corazon_BeeldmerkBruin.png"
+                alt=""
+                className="h-6 w-6 self-center"
+              />{' '}
+              Heerlijk in de watten gelegd worden?
+            </li>
+            <li className="flex flex-row gap-2 align-center">
+              <img
+                src="/Corazon_BeeldmerkBruin.png"
+                alt=""
+                className="h-6 w-6 self-center"
+              />{' '}
+              Bewust met je lichaam bezig zijn door gezonde voeding en beweging?
+            </li>
+            <li className="flex flex-row gap-2 align-center">
+              {' '}
+              <img
+                src="/Corazon_BeeldmerkBruin.png"
+                alt=""
+                className="h-6 w-6 self-center"
+              />{' '}
+              Iets nieuws ervaren?
+            </li>
           </ul>
         </SideImageContentBanner>
       </div>
@@ -135,28 +212,85 @@ export default function index() {
         title=' "Blossom Your Heart Retreat"'
       >
         <ul className="mt-4 flex flex-col gap-1 first-letter tracking-tight">
-          <li>
-            ♥️ Neem bij 3 personen of voor betaling in termijnen contact met ons
+          <li className="flex flex-row gap-2">
+            <img
+              src="/Corazon_BeeldmerkBruin.png"
+              alt=""
+              className="h-6 w-6 self-center"
+            />{' '}
+            Neem bij 3 personen of voor betaling in termijnen contact met ons
             op.
           </li>
-          <li>
-            ♥️ €155,- exclusief BTW voor een extra overnachting voor 2 personen,
+          <li className="flex flex-row gap-2">
+            <img
+              src="/Corazon_BeeldmerkBruin.png"
+              alt=""
+              className="h-6 w-6 self-center"
+            />{' '}
+            €155,- exclusief BTW voor een extra overnachting voor 2 personen,
             inclusief 2 maaltijden
           </li>
-          <li>♥️ Vier overnachtingen</li>
-          <li>♥️ 2-persoonskamer voor moeder en dochter</li>
-          <li>
-            ♥️ Alle gezonde en glutenvrije maaltijden (ontbijt, lunch en diner)
+          <li className="flex flex-row gap-2">
+            {' '}
+            <img
+              src="/Corazon_BeeldmerkBruin.png"
+              alt=""
+              className="h-6 w-6 self-center"
+            />{' '}
+            Vier overnachtingen
           </li>
-          <li>♥️ Lokaal transport</li>
-          <li>
-            ♥️ Dagelijkse workshops (inclusief massage, Energetische Healing,
+          <li className="flex flex-row gap-2">
+            {' '}
+            <img
+              src="/Corazon_BeeldmerkBruin.png"
+              alt=""
+              className="h-6 w-6 self-center"
+            />{' '}
+            2-persoonskamer voor moeder en dochter
+          </li>
+          <li className="flex flex-row gap-2">
+            <img
+              src="/Corazon_BeeldmerkBruin.png"
+              alt=""
+              className="h-6 w-6 self-center"
+            />{' '}
+            Alle gezonde en glutenvrije maaltijden (ontbijt, lunch en diner)
+          </li>
+          <li className="flex flex-row gap-2">
+            {' '}
+            <img
+              src="/Corazon_BeeldmerkBruin.png"
+              alt=""
+              className="h-6 w-6 self-center"
+            />{' '}
+            Lokaal transport
+          </li>
+          <li className="flex flex-row gap-2">
+            <img
+              src="/Corazon_BeeldmerkBruin.png"
+              alt=""
+              className="h-6 w-6 self-center"
+            />{' '}
+            Dagelijkse workshops (inclusief massage, Energetische Healing,
             Transformational Cupping, wandeltocht, intensieve begeleiding)
           </li>
-          <li>♥️ En nog veel meer verrassingen</li>
-          <li>
-            ♥️ Het vliegticket is niet inbegrepen en dient zelf geboekt te
-            worden. Houd rekening met de vliegtijden en de start van het retreat
+          <li className="flex flex-row gap-2">
+            {' '}
+            <img
+              src="/Corazon_BeeldmerkBruin.png"
+              alt=""
+              className="h-6 w-6 self-center"
+            />{' '}
+            En nog veel meer verrassingen
+          </li>
+          <li className="flex flex-row gap-2">
+            <img
+              src="/Corazon_BeeldmerkBruin.png"
+              alt=""
+              className="h-6 w-6 self-center"
+            />{' '}
+            Het vliegticket is niet inbegrepen en dient zelf geboekt te worden.
+            Houd rekening met de vliegtijden en de start van het retreat
             (uiterlijk 25 november om 11.00 uur).
           </li>
         </ul>

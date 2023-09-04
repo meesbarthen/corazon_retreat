@@ -20,7 +20,7 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-[#A8C0BF] h-full min-h-full">
+    <div className="bg-[#A8C0BF] h-[40vh] md:h-screen min-h-full">
       <header className="absolute inset-x-0 top-0 z-50 bg-transparent min-h-fit">
         <nav
           className="flex items-center justify-between p-6 pt-4 lg:px-8"
@@ -124,15 +124,14 @@ export default function Hero() {
         </Dialog>
       </header>
 
-      <div className="relative isolate pt-14 h-full min-h-full md:h-screen">
-        <video
-          autoPlay
-          loop
-          muted
-          className="absolute inset-0 -z-10 md:h-full w-full object-cover"
-          src="/corazon-retreat.mp4"
-        ></video>
-      </div>
+      <video
+        autoPlay
+        loop
+        muted
+        height={1080}
+        className="absolute block inset-0  min-h-fit h-auto w-[100vw] object-contain"
+        src="/corazon-retreat.mp4"
+      ></video>
     </div>
   );
 }

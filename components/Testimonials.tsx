@@ -43,12 +43,12 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto space-y-12 px-8">
         <div className="text-center space-y-4">
           <h1 className="text-3xl sm:text-4xl font-bold">Mooie woorden</h1>
-          <p className="max-w-xl mx-auto font-sans">
+          {/* <p className="max-w-xl mx-auto font-sans">
             Duiken in de ervaringen van onze deelnemers biedt een mozaïek van
             emoties, openbaringen en diepe verbindingen. Van intuïtieve
             ontdekkingen tot bevrijdende realisaties, elke stem echoot het hart
             van wat Corazón Retreat werkelijk is.
-          </p>
+          </p> */}
         </div>
         <div className="grid gird-cols-1 lg:grid-cols-3 gap-5 justify-items-center gap-y-8">
           {testimonials.map((item) => (

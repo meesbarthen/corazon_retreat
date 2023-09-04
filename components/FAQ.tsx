@@ -19,7 +19,7 @@ const faqs = [
   {
     question: 'Heb ik genoeg tijd tussendoor tijdens het retreat?',
     answer:
-      'Jazeker, je hebt genoeg vrije tijd. Wij geloven dat het erg belangrijk is om rust te nemen tussendoor om ervaringen te integreren. De sessies zijn alleen niet facultatief, omdat we een veilige omgeving voor iedereen willen creëren.',
+      'Jazeker, wij geloven dat het erg belangrijk is om rust te nemen tussendoor om ervaringen te integreren. Daarom hebben we een uitgebalanceerd programma samengesteld met voldoende vrije tijd.',
   },
   {
     question: 'Hoe groot is de groep?',
@@ -48,7 +48,7 @@ const faqs = [
   {
     question: 'Hoe is de kamerindeling?',
     answer:
-      'Je slaapt met je moeder en/of dochter(s) op een tweepersoonskamer. In een tweepersoonsbed. Als jullie daar problemen mee hebben, stuur ons dan een berichtje. We kunnen aparte bedden creëren.',
+      'Je slaapt met je moeder en/of dochter(s) op een tweepersoonskamer. In een tweepersoonsbed.',
   },
   {
     question: 'Wat moet ik zelf meenemen?',

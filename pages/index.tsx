@@ -13,9 +13,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="flex h-full">
-        <Hero />
-      </div>
+      <Hero />
       <ColorBanner />
       <QuoteBanner>
         <p className="text-xl leading-6 text-white p-10 text-center">

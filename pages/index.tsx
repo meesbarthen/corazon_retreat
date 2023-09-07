@@ -8,6 +8,7 @@ import ColorBanner from "@/components/ColorBanner";
 import FAQ from "@/components/FAQ";
 import ImageSwiper from "@/components/ImageSwiper";
 import Header from "@/components/Header";
+import VideoContainer from "@/components/VideoContainer";
 
 export default function Home() {
   return (
@@ -18,8 +19,7 @@ export default function Home() {
       <QuoteBanner>
         <p className="text-xl leading-6 text-white p-10 text-center">
           <strong className="sans_titel">
-            We warmly welcome you to our house and join our mother-daughter
-            retreat on Ibiza this november
+            Welkom in ons huis op Ibiza voor het moeder-dochter retreat
           </strong>
         </p>
       </QuoteBanner>
@@ -146,6 +146,14 @@ export default function Home() {
             title: "Homepage Sider Image",
             src: "/homepage-slider11.jpeg",
           },
+          {
+            title: "Homepage Slider Image",
+            src: "/sfeerimpressie_1.jpeg",
+          },
+          {
+            title: "Homepage Slider Image",
+            src: "/sfeerimpressie_2.jpeg",
+          },
         ]}
       />
       <ColorBanner />
@@ -154,6 +162,9 @@ export default function Home() {
       <ColorBanner />
       <QuoteBanner />
       <FAQ />
+      <ColorBanner />
+      <QuoteBanner />
+      <VideoContainer />
     </div>
   );
 }

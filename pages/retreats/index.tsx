@@ -3,6 +3,7 @@ import SideImageContentBanner from "@/components/SideImageContentBanner";
 import ColorBanner from "@/components/ColorBanner";
 import QuoteBanner from "@/components/QuoteBanner";
 import WhatToExpect from "@/components/WhatToExpect";
+import ImageSwiper from "@/components/ImageSwiper";
 
 const features = [
   {
@@ -51,7 +52,7 @@ export default function index() {
           title="Het mother-daughter heart connection retreat"
           buttonLabel="Yes, I'am ready!"
           buttonLink="#"
-          imageSrc="/corazon_groepsfoto.jpeg">
+          imageSrc="/retreats_page.jpeg">
           <p className="font-bold text-xl">Willen jullie:</p>
           <ul className="mt-4 flex flex-col gap-2 first-letter tracking-tight">
             {[
@@ -84,6 +85,41 @@ export default function index() {
       <Features
         features={features}
         title="Het Blossom Your Heart Retreat draait om de volgende pijlers:"
+      />
+      <ColorBanner />
+      <QuoteBanner />
+      <ImageSwiper
+        title="Een sfeerimpressie"
+        images={[
+          {
+            title: "Retreat Sider Image",
+            src: "/retreat_slider_1.jpeg",
+          },
+          {
+            title: "Retreat Sider Image",
+            src: "/about_4.jpeg",
+          },
+          {
+            title: "Retreat Sider Image",
+            src: "/about_1.jpeg",
+          },
+          {
+            title: "Retreat Sider Image",
+            src: "/retreat_slider_4.jpeg",
+          },
+          {
+            title: "Retreat Sider Image",
+            src: "/retreat_slider_5.jpeg",
+          },
+          {
+            title: "Retreat Sider Image",
+            src: "/retreat_slider_6.jpg",
+          },
+          {
+            title: "Retreat Sider Image",
+            src: "/group_picture.jpg",
+          },
+        ]}
       />
       <ColorBanner />
       <QuoteBanner />

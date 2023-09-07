@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 type SideImageContentBannerProps = {
   title?: string;
@@ -33,15 +33,14 @@ export default function SideImageContentBanner({
                 <div className="mt-10 flex">
                   <a
                     href={buttonLink}
-                    className="rounded-md bg-[#AE8466] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 font-sans"
-                  >
+                    className="rounded-md bg-[#AE8466] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 font-sans">
                     {buttonLabel}
                   </a>
                 </div>
               ) : null}
             </div>
           </div>
-          <div className="w-full md:w-1/2 sticky lg:top-4 lg:overflow-hidden">
+          <div className="w-full md:w-1/2 sticky lg:top-32 lg:overflow-hidden">
             <img
               className="w-full object-cover object-center max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 h-[35rem]"
               src={imageSrc}

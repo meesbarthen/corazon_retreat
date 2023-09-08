@@ -2,12 +2,11 @@ export default function Hero() {
   return (
     <div>
       <video
+        loop={true}
+        muted={true}
         autoPlay={true}
-        preload="auto"
-        muted
-        loop
+        playsInline={true}
         controls={false}
-        id="myVideo"
         src="/corazon-retreat.mp4"
       ></video>
     </div>

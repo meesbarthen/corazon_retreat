@@ -18,9 +18,10 @@ export default function Hero() {
     <div>
       <video
         ref={videoRef}
-        autoPlay
+        autoPlay={true}
         muted
         loop
+        controls={false}
         id="myVideo"
         src="/corazon-retreat.mp4"
       ></video>

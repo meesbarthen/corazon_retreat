@@ -6,11 +6,9 @@ export default function VideoContainer() {
           Check our trailer
         </h2>
         <video
-          loop={true}
-          muted={true}
-          autoPlay={true}
+          muted={false}
           playsInline={true}
-          controls={false}
+          controls={true}
           src="/corazon_trailer.mp4"
           className="rounded-lg"></video>
       </div>

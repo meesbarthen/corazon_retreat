@@ -31,7 +31,7 @@ export default function index() {
   return (
     <div className="">
       <SideImageContentBanner
-        title="About Corazón"
+        title="Over Corazón"
         showButton={false}
         imageSrc="/about_picture.jpeg">
         <p className="font-sans ">
@@ -62,7 +62,7 @@ export default function index() {
         </div>
       </QuoteBanner>
       <div className="bg-[#F4F3ED]">
-        <div className="flex flex-col justify-center items-center max-w-4xl py-10 md:px-16 text-black mx-auto">
+        <div className="flex flex-col justify-center items-center max-w-4xl py-10 md:px-16 text-black mx-auto px-5">
           <h5 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-center">
             Onze Reis
           </h5>

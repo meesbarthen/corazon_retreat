@@ -1,21 +1,23 @@
-import { useEffect } from 'react';
-import Image from 'next/image';
+import { useEffect } from "react";
+import Image from "next/image";
 
 // Import Swiper
-import Swiper, { Navigation } from 'swiper';
-import 'swiper/swiper.min.css';
+import Swiper, { Navigation } from "swiper";
+import "swiper/swiper.min.css";
 Swiper.use([Navigation]);
 
 export default function ImageSwiper({
   images,
   title,
+  colorWay,
 }: {
   images: { src: string; title: string }[];
   title: string;
+  colorWay?: "light" | "dark";
 }) {
   useEffect(() => {
-    const carousel = new Swiper('.carousel', {
-      slidesPerView: 'auto',
+    const carousel = new Swiper(".carousel", {
+      slidesPerView: "auto",
       grabCursor: true,
       loop: false,
       centeredSlides: false,
@@ -23,8 +25,8 @@ export default function ImageSwiper({
       spaceBetween: 24,
       watchSlidesProgress: true,
       navigation: {
-        nextEl: '.carousel-next',
-        prevEl: '.carousel-prev',
+        nextEl: ".carousel-next",
+        prevEl: ".carousel-prev",
       },
     });
   }, []);
@@ -32,7 +34,12 @@ export default function ImageSwiper({
   return (
     <section className="relative overflow-hidden">
       {/* Bg */}
-      <div className="absolute inset-0 bg-[#F4F3ED] -z-10" aria-hidden="true" />
+      <div
+        aria-hidden="true"
+        className={`[absolute inset-0 -z-10" ${
+          colorWay === "light" ? "bg-[#F4F3ED]" : "bg-[#F2E7D4]"
+        }`}
+      />
 
       {/* Illustration */}
       {/* <div
@@ -81,8 +88,7 @@ export default function ImageSwiper({
                   width="13"
                   height="12"
                   viewBox="0 0 13 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="m3.914 5 3.5-3.5L6 .086 1.086 5H1v.086L.086 6 1 6.914V7h.086L6 11.914 7.414 10.5 3.914 7H13V5z" />
                 </svg>
               </button>
@@ -93,8 +99,7 @@ export default function ImageSwiper({
                   width="13"
                   height="12"
                   viewBox="0 0 13 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="m9.086 5-3.5-3.5L7 .086 11.914 5H12v.086l.914.914-.914.914V7h-.086L7 11.914 5.586 10.5l3.5-3.5H0V5z" />
                 </svg>
               </button>

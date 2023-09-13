@@ -50,8 +50,9 @@ export default function index() {
       <div className="bg-[#F2E7D4]">
         <SideImageContentBanner
           title="Het mother-daughter heart connection retreat"
-          buttonLabel="Yes, I'am ready!"
-          buttonLink="#"
+          buttonLabel="Ja, ik wil hier bij zijn!"
+          openInNewTab={true}
+          buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSd-Uf0Iqw8l4TjsL53ep0yQKUGeqTXeWWIlWnH3clO14kAakw/viewform"
           imageSrc="/retreats_page.jpeg">
           <p className="font-bold text-xl">Willen jullie:</p>
           <ul className="mt-4 flex flex-col gap-2 first-letter tracking-tight">
@@ -78,6 +79,25 @@ export default function index() {
               </li>
             ))}
           </ul>
+          <p className="mt-5 font-bold">
+            Dan is het Blossom Your Heart Retreat de plek voor jullie op de
+            volgende data:
+          </p>
+          <p className="bg-white text-black rounded-full py-1 px-3 mt-4 shadow">
+            24 tot 28 november 2023
+          </p>
+          <p className="bg-white text-black rounded-full py-1 px-3 mt-4 shadow">
+            12 tot 16 april 2024
+          </p>
+          <p className="bg-white text-black rounded-full py-1 px-3 mt-4">
+            27 september tot 2 oktober 2024
+          </p>
+          <p className="bg-white text-black rounded-full py-1 px-3 mt-4">
+            25 tot 29 november 2024
+          </p>
+          <p className="mt-5 font-bold">
+            Geef op het contactformulier jullie voorkeursdata aan.
+          </p>
         </SideImageContentBanner>
       </div>
       <ColorBanner />
@@ -110,10 +130,6 @@ export default function index() {
           {
             title: "Retreat Sider Image",
             src: "/retreat_slider_5.jpeg",
-          },
-          {
-            title: "Retreat Sider Image",
-            src: "/retreat_slider_6.jpg",
           },
           {
             title: "Retreat Sider Image",
@@ -168,18 +184,20 @@ export default function index() {
       <QuoteBanner />
       <SideImageContentBanner
         imageSrc="/merel_with_heart.jpg"
-        title='"Blossom Your Heart Retreat"'>
+        title='"Blossom Your Heart Retreat"'
+        openInNewTab={true}
+        buttonLabel="Ja, ik wil hier bij zijn!"
+        buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSd-Uf0Iqw8l4TjsL53ep0yQKUGeqTXeWWIlWnH3clO14kAakw/viewform">
         <ul className="mt-4 flex flex-col gap-2 first-letter tracking-tight">
           {[
             "Neem bij 3 personen of voor betaling in termijnen contact met ons op.",
-            "€155,- exclusief BTW voor een extra overnachting voor 2 personen, inclusief 2 maaltijden",
+            "Blossom Your Heart Retreat investering: €3.333,- exclusief BTW voor 2 personen.",
             "Vier overnachtingen",
             "2-persoonskamer voor moeder en dochter",
             "Alle gezonde en glutenvrije maaltijden (ontbijt, lunch en diner)",
             "Lokaal transport",
             "Dagelijkse workshops (inclusief massage, Energetische Healing, Transformational Cupping, wandeltocht, intensieve begeleiding)",
             "En nog veel meer verrassingen",
-            "Het vliegticket is niet inbegrepen en dient zelf geboekt te worden. Houd rekening met de vliegtijden en de start van het retreat (uiterlijk 25 november om 11.00 uur).",
           ].map((text, index) => (
             <li className="flex flex-row gap-2 items-start" key={index}>
               <img
@@ -191,6 +209,30 @@ export default function index() {
             </li>
           ))}
         </ul>
+        <p className="mt-5 font-bold">
+          Dan is het Blossom Your Heart Retreat de plek voor jullie op de
+          volgende data:
+        </p>
+        <p className="bg-white text-black rounded-full py-1 px-3 mt-4 shadow">
+          24 tot 28 november 2023
+        </p>
+        <p className="bg-white text-black rounded-full py-1 px-3 mt-4 shadow">
+          12 tot 16 april 2024
+        </p>
+        <p className="bg-white text-black rounded-full py-1 px-3 mt-4">
+          27 september tot 2 oktober 2024
+        </p>
+        <p className="bg-white text-black rounded-full py-1 px-3 mt-4">
+          25 tot 29 november 2024
+        </p>
+        <p className="mt-5 font-bold">
+          Geef op het contactformulier jullie voorkeursdata aan.
+        </p>
+        <p className="pt-5 italic font-bold">
+          * Het vliegticket is niet inbegrepen en dient zelf geboekt te worden.
+          Houd rekening met de vliegtijden en de start van het retreat
+          (uiterlijk 25 november om 11.00 uur)
+        </p>
       </SideImageContentBanner>
     </>
   );

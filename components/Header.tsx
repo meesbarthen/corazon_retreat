@@ -7,12 +7,12 @@ import { useRouter } from "next/router";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
+  { name: "Over ons", href: "/about" },
   { name: "Retreats", href: "/retreats" },
 ];
 
 const navigation2 = [
-  { name: "Accommodation", href: "/accommodation" },
+  { name: "Accommodatie", href: "/accommodation" },
   { name: "Contact", href: "/contact" },
   // { name: "Retreats", href: "#" },
 ];

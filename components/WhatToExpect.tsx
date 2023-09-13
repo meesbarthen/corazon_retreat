@@ -1,41 +1,41 @@
 const features = [
   {
-    name: 'Pick up + drop off airport',
+    name: "Pick up + drop off airport",
   },
   {
-    name: 'Gezonde maaltijden',
+    name: "Gezonde maaltijden",
   },
   {
-    name: 'Onbeperkt drinken en snacks',
+    name: "Onbeperkt drinken en snacks",
   },
   {
-    name: 'Yoga',
+    name: "Yoga",
   },
   {
-    name: 'Breathwork',
+    name: "Breathwork",
   },
   {
-    name: 'Wandelingen',
+    name: "Wandelingen",
   },
   {
-    name: 'Sound Healing',
+    name: "Sound Healing",
   },
   {
-    name: 'Dagelijkse workshops',
+    name: "Dagelijkse workshops",
   },
   {
-    name: 'Energy Healing + 30 minuten massage',
+    name: "Energy Healing + 30 minuten massage",
     description:
-      'Receive holistic energy healing along with a rejuvenating 30-minute massage.',
+      "Receive holistic energy healing along with a rejuvenating 30-minute massage.",
   },
   {
-    name: 'Transformational Cupping sessie',
+    name: "Transformational Cupping sessie",
   },
   {
-    name: 'Vier of vijf overnachtingen',
+    name: "Vier of vijf overnachtingen",
   },
   {
-    name: 'Begeleid door ervaren vrouwen',
+    name: "Begeleid door ervaren vrouwen",
   },
 ];
 
@@ -45,7 +45,7 @@ export default function WhatToExpect() {
       <div className="mx-auto max-w-7xl px-8">
         <div className="mx-auto max-w-4xl lg:text-center">
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            What to expect?
+            Wat kan ik verwachten?
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600 font-sans mb-10">
             Het Blossom Your Heart Retreat vindt plaats van 24 november tot 28
@@ -62,8 +62,7 @@ export default function WhatToExpect() {
             {features.map((feature) => (
               <div
                 key={feature.name}
-                className="flex flex-col items-center w-full"
-              >
+                className="flex flex-col items-center w-full">
                 <dt className="flex flex-col items-center gap-x-3 text-base font-sans leading-7 text-gray-900">
                   <img
                     src="/Corazon_BeeldmerkBruin.png"
@@ -81,8 +80,11 @@ export default function WhatToExpect() {
         </div>
       </div>
       <div className="flex justify-center">
-        <a className="rounded-md flex justify-center items-center max-w-xs bg-[#AE8466] mt-10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 font-sans">
-          Yes, I&apos;am ready!
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSd-Uf0Iqw8l4TjsL53ep0yQKUGeqTXeWWIlWnH3clO14kAakw/viewform"
+          target="_blank"
+          className="rounded-md flex justify-center items-center max-w-xs bg-[#AE8466] mt-10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 font-sans">
+          Ja, ik wil hier bij zijn!
         </a>
       </div>
     </div>

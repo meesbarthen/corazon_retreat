@@ -1,17 +1,17 @@
-import ColorBanner from './ColorBanner';
+import ColorBanner from "./ColorBanner";
 
 const navigation = {
   main: [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Retreats', href: '/retreats' },
-    { name: 'Contact', href: '/contact' },
-    { name: 'Accommodation', href: '/accomodation' },
+    { name: "Home", href: "/" },
+    { name: "Over ons", href: "/about" },
+    { name: "Retreats", href: "/retreats" },
+    { name: "Contact", href: "/contact" },
+    { name: "Accommodatie", href: "/accommodation" },
   ],
   social: [
     {
-      name: 'Facebook',
-      href: '#',
+      name: "Facebook",
+      href: "#",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -23,8 +23,8 @@ const navigation = {
       ),
     },
     {
-      name: 'Instagram',
-      href: 'https://www.instagram.com/corazonretreat/',
+      name: "Instagram",
+      href: "https://www.instagram.com/corazonretreat/",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -36,8 +36,8 @@ const navigation = {
       ),
     },
     {
-      name: 'Email',
-      href: 'mailto:info@corazonretreats.com',
+      name: "Email",
+      href: "mailto:info@corazonretreats.com",
       icon: (props: any) => (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -45,8 +45,7 @@ const navigation = {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-6 h-6"
-        >
+          className="w-6 h-6">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -66,14 +65,12 @@ export default function Footer() {
         <img className="h-20" src="/corazon-logo-wit.png" alt="" />
         <nav
           className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12 mt-10"
-          aria-label="Footer"
-        >
+          aria-label="Footer">
           {navigation.main.map((item) => (
             <div key={item.name} className="pb-6 text-centers">
               <a
                 href={item.href}
-                className="text-sm leading-6 font-bold text-white text-center hover:text-gray-900 font-sans"
-              >
+                className="text-sm leading-6 font-bold text-white text-center hover:text-gray-900 font-sans">
                 {item.name}
               </a>
             </div>
@@ -84,15 +81,14 @@ export default function Footer() {
             <a
               key={item.name}
               href={item.href}
-              className="text-white t hover:text-gray-500"
-            >
+              className="text-white t hover:text-gray-500">
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </a>
           ))}
         </div>
         <p className="mt-10 text-center text-xs leading-5 text-white font-sans">
-          &copy; 2023 Corazon Retreat. All rights reserved | Made with ❤️ by{' '}
+          &copy; 2023 Corazon Retreat. All rights reserved | Made with ❤️ by{" "}
           <a target="_blank" href="https://www.wavydigital.io/">
             WavyDigital
           </a>

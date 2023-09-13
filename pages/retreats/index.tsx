@@ -1,46 +1,46 @@
-import Features from "@/components/Features";
-import SideImageContentBanner from "@/components/SideImageContentBanner";
-import ColorBanner from "@/components/ColorBanner";
-import QuoteBanner from "@/components/QuoteBanner";
-import WhatToExpect from "@/components/WhatToExpect";
-import ImageSwiper from "@/components/ImageSwiper";
+import Features from '@/components/Features';
+import SideImageContentBanner from '@/components/SideImageContentBanner';
+import ColorBanner from '@/components/ColorBanner';
+import QuoteBanner from '@/components/QuoteBanner';
+import WhatToExpect from '@/components/WhatToExpect';
+import ImageSwiper from '@/components/ImageSwiper';
 
 const features = [
   {
-    title: "Sharing circles and ceremonies",
-    text: "Verbinding is ons uitgangspunt. Wij creëren talloze momenten waarop we met elkaar verbinden, delen en oprecht naar elkaar luisteren. Dit is een ruimte waar je volledig je authentieke zelf kunt zijn en waar alles welkom is.",
+    title: 'Sharing circles and ceremonies',
+    text: 'Verbinding is ons uitgangspunt. Wij creëren talloze momenten waarop we met elkaar verbinden, delen en oprecht naar elkaar luisteren. Dit is een ruimte waar je volledig je authentieke zelf kunt zijn en waar alles welkom is.',
   },
   {
-    title: "Yoga",
-    text: "Ons aanbod omvat vooral rustige yogasessies, zoals Yin yoga. We hebben hiervoor gekozen omdat yoga een mooie manier is om je zenuwstelsel te kalmeren en stress te verminderen. Het nodigt ook uit tot introspectie, om weer in contact te komen met wat er zich in het lichaam afspeelt.",
+    title: 'Yoga',
+    text: 'Ons aanbod omvat vooral rustige yogasessies, zoals Yin yoga. We hebben hiervoor gekozen omdat yoga een mooie manier is om je zenuwstelsel te kalmeren en stress te verminderen. Het nodigt ook uit tot introspectie, om weer in contact te komen met wat er zich in het lichaam afspeelt.',
   },
   {
-    title: "Liefdevolle beweging",
-    text: "We houden van beweging, maar geloven niet dat we ons lichaam te veel moeten pushen. Wij zijn geen retreat dat keihard gaat trainen. Wij willen op een liefdevolle, zachte manier in verbinding blijven met ons lichaam.",
+    title: 'Liefdevolle beweging',
+    text: 'We houden van beweging, maar geloven niet dat we ons lichaam te veel moeten pushen. Wij zijn geen retreat dat keihard gaat trainen. Wij willen op een liefdevolle, zachte manier in verbinding blijven met ons lichaam.',
   },
   {
-    title: "Breathwork",
-    text: "Breathwork is een mooie manier om diep met jezelf te verbinden, los te laten wat je niet meer dient, mooie inzichten te verkrijgen of juist de rust te geven die je nodig hebt.",
+    title: 'Breathwork',
+    text: 'Breathwork is een mooie manier om diep met jezelf te verbinden, los te laten wat je niet meer dient, mooie inzichten te verkrijgen of juist de rust te geven die je nodig hebt.',
   },
   {
-    title: "Energetische Healing, Massage en Transformational Cupping",
-    text: "De eerste dagen staan in teken van veel RUST! Door middel van een energetische healing, een massage en een Transformational Cupping behandeling zorgen we ervoor dat je weer helemaal landt in je lichaam en alle stress van thuis kan loslaten.",
+    title: 'Energetische Healing, Massage en Transformational Cupping',
+    text: 'De eerste dagen staan in teken van veel RUST! Door middel van een energetische healing, een massage en een Transformational Cupping behandeling zorgen we ervoor dat je weer helemaal landt in je lichaam en alle stress van thuis kan loslaten.',
   },
   {
-    title: "Tijd voor Stilte en Reflectie",
-    text: "Wij geloven in het belang van momenten van stilte en reflectie. Hierbij kun je echt even verbinding maken met jezelf, schrijven in je journal en de geleerde lessen integreren.",
+    title: 'Tijd voor Stilte en Reflectie',
+    text: 'Wij geloven in het belang van momenten van stilte en reflectie. Hierbij kun je echt even verbinding maken met jezelf, schrijven in je journal en de geleerde lessen integreren.',
   },
   {
-    title: "Wandelingen",
-    text: "We houden van de natuur en wandelen en vinden dit een magische combinatie om met jezelf te verbinden, vooral als we dit in stilte doen. Dit kan echt een moment zijn om een stroom van creatieve nieuwe ideeën toe te laten.",
+    title: 'Wandelingen',
+    text: 'We houden van de natuur en wandelen en vinden dit een magische combinatie om met jezelf te verbinden, vooral als we dit in stilte doen. Dit kan echt een moment zijn om een stroom van creatieve nieuwe ideeën toe te laten.',
   },
   {
-    title: "Sound Healing",
-    text: "Stel je voor: je ligt heerlijk op je yogamat, omringd door betoverende klanken van klankschalen, gongs en andere helende instrumenten. Geluid heeft een genezend vermogen, daarom vinden wij een Sound Healing onmisbaar tijdens ons retreat. Het is een manier om volledig te kunnen ontspannen, los te laten wat je niet meer dient en mooie inzichten te verkrijgen.",
+    title: 'Sound Healing',
+    text: 'Stel je voor: je ligt heerlijk op je yogamat, omringd door betoverende klanken van klankschalen, gongs en andere helende instrumenten. Geluid heeft een genezend vermogen, daarom vinden wij een Sound Healing onmisbaar tijdens ons retreat. Het is een manier om volledig te kunnen ontspannen, los te laten wat je niet meer dient en mooie inzichten te verkrijgen.',
   },
   {
-    title: "Intieme groep",
-    text: "Wij houden de groep klein en intiem, zodat we veel persoonlijke aandacht kunnen bieden. Maximaal 11 personen kunnen meedoen.",
+    title: 'Intieme groep',
+    text: 'Wij houden de groep klein en intiem, zodat we veel persoonlijke aandacht kunnen bieden. Maximaal 11 personen kunnen meedoen.',
   },
 ];
 
@@ -53,21 +53,22 @@ export default function index() {
           buttonLabel="Ja, ik wil hier bij zijn!"
           openInNewTab={true}
           buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSd-Uf0Iqw8l4TjsL53ep0yQKUGeqTXeWWIlWnH3clO14kAakw/viewform"
-          imageSrc="/retreats_page.jpeg">
+          imageSrc="/retreats_page.jpeg"
+        >
           <p className="font-bold text-xl">Willen jullie:</p>
           <ul className="mt-4 flex flex-col gap-2 first-letter tracking-tight">
             {[
-              "De band met je moeder of dochter verdiepen?",
-              "Meer verbinding met jezelf ervaren?",
-              "Vreugde in je leven vergroten?",
-              "Even tot rust komen en opladen?",
-              "Leren hoe je je diep kunt verbinden met je lichaam?",
-              "Gelijkgestemde vrouwen ontmoeten waarbij je helemaal jezelf kunt zijn?",
-              "Inzichten krijgen om meer vanuit verbinding met jezelf te leven?",
-              "Meer vertrouwen in jezelf ontwikkelen?",
-              "Heerlijk in de watten gelegd worden?",
-              "Bewust met je lichaam bezig zijn door gezonde voeding en beweging?",
-              "Iets nieuws ervaren?",
+              'De band met je moeder of dochter verdiepen?',
+              'Meer verbinding met jezelf ervaren?',
+              'Vreugde in je leven vergroten?',
+              'Even tot rust komen en opladen?',
+              'Leren hoe je je diep kunt verbinden met je lichaam?',
+              'Gelijkgestemde vrouwen ontmoeten waarbij je helemaal jezelf kunt zijn?',
+              'Inzichten krijgen om meer vanuit verbinding met jezelf te leven?',
+              'Meer vertrouwen in jezelf ontwikkelen?',
+              'Heerlijk in de watten gelegd worden?',
+              'Bewust met je lichaam bezig zijn door gezonde voeding en beweging?',
+              'Iets nieuws ervaren?',
             ].map((text, index) => (
               <li className="flex flex-row gap-2 items-start" key={index}>
                 <img
@@ -112,28 +113,28 @@ export default function index() {
         title="Een sfeerimpressie"
         images={[
           {
-            title: "Retreat Sider Image",
-            src: "/retreat_slider_1.jpeg",
+            title: 'Retreat Sider Image',
+            src: '/retreat_slider_1.jpeg',
           },
           {
-            title: "Retreat Sider Image",
-            src: "/about_4.jpeg",
+            title: 'Retreat Sider Image',
+            src: '/about_4.jpeg',
           },
           {
-            title: "Retreat Sider Image",
-            src: "/about_1.jpeg",
+            title: 'Retreat Sider Image',
+            src: '/about_1.jpeg',
           },
           {
-            title: "Retreat Sider Image",
-            src: "/retreat_slider_4.jpeg",
+            title: 'Retreat Sider Image',
+            src: '/retreat_slider_4.jpeg',
           },
           {
-            title: "Retreat Sider Image",
-            src: "/retreat_slider_5.jpeg",
+            title: 'Retreat Sider Image',
+            src: '/retreat_slider_5.jpeg',
           },
           {
-            title: "Retreat Sider Image",
-            src: "/group_picture.jpg",
+            title: 'Retreat Sider Image',
+            src: '/group_picture.jpg',
           },
         ]}
       />
@@ -174,7 +175,8 @@ export default function index() {
                   src="https://www.youtube.com/embed/OetZ_oGLrMQ?si=orLwUO1E8v3-Ufbr"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen></iframe>
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
           </div>
@@ -187,17 +189,18 @@ export default function index() {
         title='"Blossom Your Heart Retreat"'
         openInNewTab={true}
         buttonLabel="Ja, ik wil hier bij zijn!"
-        buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSd-Uf0Iqw8l4TjsL53ep0yQKUGeqTXeWWIlWnH3clO14kAakw/viewform">
+        buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSd-Uf0Iqw8l4TjsL53ep0yQKUGeqTXeWWIlWnH3clO14kAakw/viewform"
+      >
         <ul className="mt-4 flex flex-col gap-2 first-letter tracking-tight">
           {[
-            "Neem bij 3 personen of voor betaling in termijnen contact met ons op.",
-            "Blossom Your Heart Retreat investering: €3.333,- exclusief BTW voor 2 personen.",
-            "Vier overnachtingen",
-            "2-persoonskamer voor moeder en dochter",
-            "Alle gezonde en glutenvrije maaltijden (ontbijt, lunch en diner)",
-            "Lokaal transport",
-            "Dagelijkse workshops (inclusief massage, Energetische Healing, Transformational Cupping, wandeltocht, intensieve begeleiding)",
-            "En nog veel meer verrassingen",
+            'Blossom Your Heart Retreat investering: €3.333,- exclusief BTW voor 2 personen.',
+            'Neem bij 3 personen of voor betaling in termijnen contact met ons op.',
+            'Vier overnachtingen',
+            '2-persoonskamer voor moeder en dochter',
+            'Alle gezonde en glutenvrije maaltijden (ontbijt, lunch en diner)',
+            'Lokaal transport',
+            'Dagelijkse workshops (inclusief massage, Energetische Healing, Transformational Cupping, wandeltocht, intensieve begeleiding)',
+            'En nog veel meer verrassingen',
           ].map((text, index) => (
             <li className="flex flex-row gap-2 items-start" key={index}>
               <img
@@ -209,10 +212,7 @@ export default function index() {
             </li>
           ))}
         </ul>
-        <p className="mt-5 font-bold">
-          Dan is het Blossom Your Heart Retreat de plek voor jullie op de
-          volgende data:
-        </p>
+        <p className="mt-5 font-bold">op de volgende data:</p>
         <p className="bg-white text-black rounded-full py-1 px-3 mt-4 shadow">
           24 tot 28 november 2023
         </p>

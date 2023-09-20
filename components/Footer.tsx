@@ -64,10 +64,10 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8 flex flex-col items-center justify-center">
         <img className="h-20" src="/corazon-logo-wit.png" alt="" />
         <nav
-          className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12 mt-10"
+          className="-mb-6 flex flex-wrap items-center justify-center mt-10"
           aria-label="Footer">
           {navigation.main.map((item) => (
-            <div key={item.name} className="pb-6 text-centers">
+            <div key={item.name} className="pb-6 text-center mx-4 mx-auto">
               <a
                 href={item.href}
                 className="text-sm leading-6 font-bold text-white text-center hover:text-gray-900 font-sans">
@@ -76,6 +76,7 @@ export default function Footer() {
             </div>
           ))}
         </nav>
+
         <div className="mt-10 flex justify-center space-x-10">
           {navigation.social.map((item) => (
             <a

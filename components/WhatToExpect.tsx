@@ -49,10 +49,10 @@ export default function WhatToExpect() {
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600 font-sans mb-10">
             Het Blossom Your Heart Retreat vindt plaats van donderdagavond 23
-            november tot dinsdag 28 november 2023. Jullie zijn van harte welkom
-            om vanaf donderdagavond of uiterlijk op vrijdagochtend voor 11.00
-            uur aan te komen. Dit geeft jullie de gelegenheid om het huis en de
-            omgeving te verkennen en je snel thuis te voelen. De eerste
+            november tot en met dinsdag 28 november 2023. Jullie zijn van harte
+            welkom om vanaf donderdagavond of uiterlijk op vrijdagochtend voor
+            11.00 uur aan te komen. Dit geeft jullie de gelegenheid om het huis
+            en de omgeving te verkennen en je snel thuis te voelen. De eerste
             ceremonie staat gepland op vrijdag rond 13.00 uur. We sluiten het
             retreat af op 28 november met een gezamenlijk ontbijt, gevolgd door
             een eindceremonie die tot ongeveer 14.00 uur zal duren.

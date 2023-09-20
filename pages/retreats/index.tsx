@@ -68,7 +68,6 @@ export default function index() {
               "Heerlijk in de watten gelegd worden?",
               "Bewust met je lichaam bezig zijn door gezonde voeding en beweging?",
               "Iets nieuws ervaren?",
-              "Blossom Your Heart Retreat investering: <span class='font-bold'>1.888,00. Ex btw per persoon</span>.",
             ].map((text, index) => (
               <li className="flex flex-row gap-2 items-start" key={index}>
                 <img
@@ -194,7 +193,7 @@ export default function index() {
         buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSd-Uf0Iqw8l4TjsL53ep0yQKUGeqTXeWWIlWnH3clO14kAakw/viewform">
         <ul className="mt-4 flex flex-col gap-2 first-letter tracking-tight">
           {[
-            "Blossom Your Heart Retreat investering: <span class='font-bold'>1.888,00. Ex btw per persoon</span>.",
+            "Blossom Your Heart Retreat investering: <span class='font-bold'>€1.888,00. per persoon</span>.",
             "Neem bij 3 personen of voor betaling in termijnen contact met ons op.",
             "Vier overnachtingen",
             "2-persoonskamer voor moeder en dochter",

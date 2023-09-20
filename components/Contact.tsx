@@ -2,7 +2,7 @@ import {
   BuildingOffice2Icon,
   EnvelopeIcon,
   PhoneIcon,
-} from '@heroicons/react/24/outline';
+} from "@heroicons/react/24/outline";
 
 export default function Contact() {
   return (
@@ -38,8 +38,7 @@ export default function Contact() {
                 <dd>
                   <a
                     className="hover:text-white font-sans"
-                    href="tel:+31 642747849"
-                  >
+                    href="tel:+31 642747849">
                     Merel: +31 6 42747849
                   </a>
                 </dd>
@@ -52,8 +51,7 @@ export default function Contact() {
                 <dd>
                   <a
                     className="hover:text-white"
-                    href="mailto:cornelie@barthen.com"
-                  >
+                    href="mailto:cornelie@barthen.com">
                     cornelie@barthen.com
                   </a>
                 </dd>
@@ -66,16 +64,7 @@ export default function Contact() {
             <h2 className="text-3xl font-bold tracking-tight">Contact</h2>
             <p className="mt-6 text-lg leading-8 font-sans">
               Ben je nieuwsgierig of voel je dit is helemaal wat voor mij? Vul
-              dan je gegevens in via het contactformulier en wij sturen je een
-              e-mail met meer informatie. Of bel{' '}
-              <a className="underline" href="tel:+31 642747849">
-                Merel
-              </a>{' '}
-              of{' '}
-              <a className="underline" href="tel:+31 651911944">
-                Cornelie
-              </a>{' '}
-              voor een vrijblijvend gesprek.
+              dan je gegevens in via het contactformulier.
             </p>
           </div>
         </div>

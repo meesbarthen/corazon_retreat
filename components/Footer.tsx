@@ -45,7 +45,8 @@ const navigation = {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-6 h-6">
+          className="w-6 h-6"
+        >
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -65,12 +66,14 @@ export default function Footer() {
         <img className="h-20" src="/corazon-logo-wit.png" alt="" />
         <nav
           className="-mb-6 flex flex-wrap items-center justify-center mt-10"
-          aria-label="Footer">
+          aria-label="Footer"
+        >
           {navigation.main.map((item) => (
-            <div key={item.name} className="pb-6 text-center mx-4 mx-auto">
+            <div key={item.name} className="pb-6 text-center mx-auto px-2">
               <a
                 href={item.href}
-                className="text-sm leading-6 font-bold text-white text-center hover:text-gray-900 font-sans">
+                className="text-sm leading-6 font-bold text-white text-center hover:text-gray-900 font-sans"
+              >
                 {item.name}
               </a>
             </div>
@@ -82,7 +85,8 @@ export default function Footer() {
             <a
               key={item.name}
               href={item.href}
-              className="text-white t hover:text-gray-500">
+              className="text-white t hover:text-gray-500"
+            >
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </a>

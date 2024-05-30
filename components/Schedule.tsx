@@ -1,9 +1,10 @@
 import React from "react";
-import Link from "next/link";
+import Image from "next/image";
 
 type ScheduleItem = {
   time: string;
   description: string;
+  image?: string; // Optional image property
 };
 
 type ScheduleProps = {
@@ -34,8 +35,21 @@ const Schedule: React.FC<ScheduleProps> = ({ title, subtitle, items }) => {
                 <div className="flex-shrink-0 text-gray-600 text-sm w-1/4">
                   {item.time}
                 </div>
-                <div className="flex-grow text-gray-900 text-sm font-medium w-3/4">
+                <div className="flex-grow text-gray-900 text-sm font-medium w-3/4 flex justify-between items-center">
                   {item.description}
+                  {item.image && (
+                    <div className="ml-4">
+                      <div className="w-20 h-20 relative">
+                        <Image
+                          src={item.image}
+                          alt={item.description}
+                          layout="fill"
+                          objectFit="cover"
+                          className="rounded-full"
+                        />
+                      </div>
+                    </div>
+                  )}
                 </div>
               </li>
             ))}

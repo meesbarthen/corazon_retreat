@@ -38,7 +38,8 @@ export default function Contact() {
                 <dd>
                   <a
                     className="hover:text-white font-sans"
-                    href="tel:+31 642747849">
+                    href="tel:+31 642747849"
+                  >
                     Merel: +31 6 42747849
                   </a>
                 </dd>
@@ -51,8 +52,9 @@ export default function Contact() {
                 <dd>
                   <a
                     className="hover:text-white"
-                    href="mailto:cornelie@barthen.com">
-                    cornelie@barthen.com
+                    href="mailto:info@corazonretreat.com"
+                  >
+                    info@corazonretreat.com
                   </a>
                 </dd>
               </div>

@@ -33,7 +33,7 @@ export default function index() {
       <SideImageContentBanner
         title="Ons liefdevolle team"
         showButton={false}
-        imageSrc="/about_picture.jpeg"
+        imageSrc="/group_picture.jpg"
       >
         <p className="font-sans ">
           Wij hebben dit met zorg samengesteld, omdat ieder van hen op zijn
@@ -63,7 +63,7 @@ export default function index() {
       <QuoteBanner /> */}
       <BannerWithQuote
         imagePosition="right" // or "right"
-        imageSrc="/merel.jpeg"
+        imageSrc="/fiona.jpg"
         title="Fiona"
         paragraphs={[
           "Fiona is onze lieve yogi en fotograaf, die liefde, wijsheid en rust belichaamt. Ze is recent moeder geworden van een dochter. Tijdens het retreat geeft ze yin yogalessen, een meditatieve yoga die helpt je lagen van zijn te ontdekken, te gronden en meer ademruimte te creëren. Iedere les is een reis naar diepere lagen van jezelf en je bewustzijn. Daarnaast maakt Fiona foto's, zowel tijdens het retreat als portretfoto’s. Haar warme persoonlijkheid zorgt ervoor dat je je snel op je gemak voelt en je ware zelf kunt laten zien en stralen.",
@@ -86,7 +86,7 @@ export default function index() {
       <QuoteBanner /> */}
       <BannerWithQuote
         imagePosition="right" // or "right"
-        imageSrc="/merel.jpeg"
+        imageSrc="/sadhana.jpeg"
         // quote="De weg naar binnen is een pad vol uitdagingen, maar aan het eind ervan vind je de pure essentie van wie je werkelijk bent."
         // quoteAuthor="Merel Barthen"
         title="Sadhana "

@@ -2,12 +2,13 @@ import Features from "@/components/Features";
 import SideImageContentBanner from "@/components/SideImageContentBanner";
 import ColorBanner from "@/components/ColorBanner";
 import QuoteBanner from "@/components/QuoteBanner";
-import WhatToExpect from "@/components/WhatToExpect";
 import ImageSwiper from "@/components/ImageSwiper";
 import Testimonials from "@/components/Testimonials";
 import BannerWithQuote from "@/components/BannerWithQuote";
 import Image from "next/image";
 import Schedule from "@/components/Schedule";
+import Link from "next/link";
+import MultiStepProcess from "@/components/MultiStepProcess";
 
 const features = [
   {
@@ -92,7 +93,7 @@ const retreat_list = [
   {
     text: "Dagelijkse activiteiten:",
     description:
-      "Verwen jezelf met workshops zoals massage, energetische healing, transformational cupping, wandeltochten en intensieve begeleiding.",
+      "Verwen jezelf met workshops zoals massage, energetische healing, transformational cupping, wandeltochten, intensieve begeleiding, breathwork en soundhealing!",
   },
   {
     text: "Onvergetelijke ervaringen:",
@@ -105,14 +106,42 @@ const retreat_list = [
   },
 ];
 
+const steps = [
+  {
+    title: "Kennismaking",
+    text: "Ons retreat begint met een persoonlijk kennismakingsgesprek. We kunnen niet wachten om jullie als moeder en dochter duo te leren kennen! Deze 6 onvergetelijke dagen samen worden nóg specialer als we jullie wensen en behoeften begrijpen. Het programma van het retreat staat in grote lijnen vast, maar we zien het ook als een co-creatie waarin we graag jullie intenties integreren.",
+  },
+  {
+    title: "Informatieve mail",
+    text: "Kort daarna ontvangen jullie een mail met onze spelregels, een vragenlijst en alle essentiële informatie: wat je moet meenemen en waar je aan moet denken. Zo kunnen jullie je volledig voorbereiden op het retreat en ontspannen aan deze bijzondere reis beginnen.",
+  },
+  {
+    title: "Het retreat begint...",
+    text: "Het moment is eindelijk daar! We halen jullie op van de luchthaven in Ibiza. De komende week belooft pure ontspanning, diepe verbinding met jezelf en elkaar, en vooral veel plezier. Jullie gaan genieten van onvergetelijke momenten en vol nieuwe energie en inspiratie terugkeren.",
+  },
+  {
+    title: "Reünie!",
+    text: "Hoe geweldig is het om elkaar na zo’n bijzondere week online weer te zien? We delen onze ervaringen, reflecteren samen en praten bij. We bespreken ook hoe we de nieuwe ideeën en inzichten kunnen integreren in het dagelijks leven.",
+  },
+];
+
 const scheduleItems = [
-  { time: "07:00", description: "Snack met thee/koffie" },
+  {
+    time: "07:00",
+    description: "Snack met thee/koffie",
+    image: "/homepage-slider2.jpeg",
+  },
   {
     time: "08:00",
     description:
       "Verbind met je lichaam door yoga, een hike, of andere beweging.",
+    image: "/homepage-slider3.jpeg",
   },
-  { time: "09:30", description: "Heerlijk gezond ontbijtje." },
+  {
+    time: "09:30",
+    description: "Heerlijk gezond ontbijtje.",
+    image: "/sfeerimpressie_2.jpeg",
+  },
   { time: "11:00-13:00", description: "Activiteit." },
   { time: "13:30", description: "Lunch." },
   {
@@ -121,7 +150,11 @@ const scheduleItems = [
       "Vrije tijd: relax bij het zwembad, lees een boek, of doe waar je zin in hebt.",
   },
   { time: "16:30-18:30", description: "Activiteit" },
-  { time: "19:00", description: "Gezond en heerlijk diner." },
+  {
+    time: "19:00",
+    description: "Gezond en heerlijk diner.",
+    image: "/retreat_slider_4.jpeg",
+  },
   {
     time: "20:00",
     description:
@@ -150,9 +183,16 @@ export default function index() {
               5 dagen op een innerlijke reis voor een diepere verbinding met
               jezelf en elkaar.
             </p>
-            <button className="mt-4 bg-[#AE8466] text-white font-bold py-2 px-4 rounded">
+            <Link
+              rel="noopener noreferrer"
+              target="_blank"
+              href={
+                "https://docs.google.com/forms/d/e/1FAIpQLSd-Uf0Iqw8l4TjsL53ep0yQKUGeqTXeWWIlWnH3clO14kAakw/viewform"
+              }
+              className="mt-4 bg-[#AE8466] text-white font-bold py-2 px-4 rounded"
+            >
               Ja, let’s go!
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -163,7 +203,7 @@ export default function index() {
         title="Mooie woorden van de Corazón tribe"
         testimonials={testimonials}
         ctaLabel="Join Our Next Retreat"
-        ctaLink="/next-retreat"
+        ctaLink="https://docs.google.com/forms/d/e/1FAIpQLSd-Uf0Iqw8l4TjsL53ep0yQKUGeqTXeWWIlWnH3clO14kAakw/viewform"
         showCTA={true}
         openCTAInNewTab={true}
         bgColor="#FFFFFF"
@@ -215,15 +255,12 @@ export default function index() {
           * Neem contact met ons op bij drie personen of voor
           betalingsmogelijkheden in termijnen.
         </p>
-        <h3 className="mt-5 font-bold">
-          Dit klinkt fantastisch! We schrijven ons in
-        </h3>
       </SideImageContentBanner>
       <ColorBanner />
       <QuoteBanner />
       <Features
         colorWay="dark"
-        title="3 pilaren"
+        title="Wat je gaat ervaren"
         features={[
           {
             title: "Rust",
@@ -259,27 +296,10 @@ export default function index() {
       />
       <ColorBanner />
       <QuoteBanner />
-      <Features
-        colorWay="dark"
+      <MultiStepProcess
         title="Wat kunnen jullie nog meer verwachten?"
-        features={[
-          {
-            title: "Kennismaking",
-            text: "Ons retreat begint met een persoonlijk kennismakingsgesprek. We kunnen niet wachten om jullie als moeder en dochter duo te leren kennen! Deze 6 onvergetelijke dagen samen worden nóg specialer als we jullie wensen en behoeften begrijpen. Het programma van het retreat staat in grote lijnen vast, maar we zien het ook als een co-creatie waarin we graag jullie intenties integreren.",
-          },
-          {
-            title: "Informatieve mail",
-            text: "Kort daarna ontvangen jullie een mail met onze spelregels, een vragenlijst en alle essentiële informatie: wat je moet meenemen en waar je aan moet denken. Zo kunnen jullie je volledig voorbereiden op het retreat en ontspannen aan deze bijzondere reis beginnen.",
-          },
-          {
-            title: "Het retreat begint...",
-            text: "Het moment is eindelijk daar! We halen jullie op van de luchthaven in Ibiza. De komende week belooft pure ontspanning, diepe verbinding met jezelf en elkaar, en vooral veel plezier. Jullie gaan genieten van onvergetelijke momenten en vol nieuwe energie en inspiratie terugkeren.",
-          },
-          {
-            title: "Reünie!",
-            text: "Hoe geweldig is het om elkaar na zo’n bijzondere week online weer te zien? We delen onze ervaringen, reflecteren samen en praten bij. We bespreken ook hoe we de nieuwe ideeën en inzichten kunnen integreren in het dagelijks leven.",
-          },
-        ]}
+        colorWay="light"
+        steps={steps}
       />
       <ColorBanner />
       <QuoteBanner />

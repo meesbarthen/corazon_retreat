@@ -6,7 +6,7 @@ type RetreatDetails = {
   imageSrc: string;
   title: string;
   date: string;
-  description: string;
+  description?: string;
   buttonText: React.ReactNode;
   buttonLink: string;
   openInNewTab?: boolean;
@@ -28,7 +28,7 @@ const RetreatCard: React.FC<RetreatCardProps> = ({
       <div className="text-center mb-8 md:mb-16">
         <h1 className="text-3xl sm:text-4xl font-bold">{title}</h1>
       </div>
-      <div className="flex max-w-7xl flex-col md:flex-row justify-center items-center gap-10">
+      <div className="flex max-w-7xl flex-col md:flex-row justify-start items-start gap-10">
         {[firstRetreat, secondRetreat].map((retreat, index) => (
           <div key={index} className="bg-white overflow-hidden max-w-md">
             <div className="flex flex-col">
@@ -47,9 +47,9 @@ const RetreatCard: React.FC<RetreatCardProps> = ({
                     {retreat.title}
                   </h2>
                   <p className="mt-2 text-gray-600 font-sans">{retreat.date}</p>
-                  {/* <p className="mt-4 text-gray-700 font-sans">
+                  <p className="mt-4 text-gray-700 font-sans">
                     {retreat.description}
-                  </p> */}
+                  </p>
                 </div>
                 <Link
                   href={retreat.buttonLink}

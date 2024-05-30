@@ -87,25 +87,36 @@ const faqs = [
     answer:
       "De prijs bedraagt 1.888,00 per persoon voor een 6-daags retreat inclusief verblijf op een 2-persoonskamer, alle maaltijden, workshops, yoga, massages, healing en vervoer.",
   },
+  {
+    question:
+      "Is het Moeder-Dochter Retreat ook geschikt voor schoonmoeders en schoondochters, of stiefmoeders en stiefdochters?",
+    answer:
+      "Absoluut! Iedereen met een moeder- of dochterfiguur in hun leven is van harte welkom om deel te nemen aan dit speciale retreat.",
+  },
 ];
 
 const firstRetreat = {
-  imageSrc: "/retreat_slider_1.jpeg",
+  imageSrc: "/mama-merel.jpg",
   title: "Moeder-dochter Heart 2 Heart retreat",
-  date: "27 september t/m 2 oktober 2023",
-  description: "Ja, ik wil meer informatie",
+  date: "27 september t/m 2 oktober 2024",
   buttonText: <span>Ja, ik wil meer informatie</span>,
   buttonLink: "/retreats",
-  openInNewTab: true,
+  openInNewTab: false,
 };
 
 const secondRetreat = {
   imageSrc: "/retreat_slider_1.jpeg",
   title: "Vrouwen Blossom your Heart retreat",
-  date: "10 t/m 14 april 2024",
-  description: "Ja, ik wil op de wachtlijst!",
-  buttonText: <span>Ja, ik wil op de wachtlijst!</span>,
-  buttonLink: "/retreats",
+  date: "10 t/m 14 april 2025",
+  description:
+    "6 dagen van rust, reconnectie met jezelf, gezond eten en veel plezier met andere vrouwen.",
+  buttonText: (
+    <span>
+      Zet me op de mailinglijst voor meer informatie of ik wil me inschrijven!
+    </span>
+  ),
+  buttonLink:
+    "https://docs.google.com/forms/d/e/1FAIpQLScbFVQFYz55N43pA1of0_DGNWDd_N8LGAKq4Rg0WTVv3xMHmg/viewform",
   openInNewTab: true,
 };
 
@@ -161,10 +172,10 @@ export default function Home() {
       <ColorBanner />
       <QuoteBanner />
       <Testimonials
-        title="Mooie woorden"
+        title="Mooie woorden van de Corazón tribe"
         testimonials={testimonials}
         ctaLabel="Join Our Next Retreat"
-        ctaLink="/next-retreat"
+        ctaLink="/retreats"
         showCTA={true}
         openCTAInNewTab={true}
       />
@@ -191,7 +202,7 @@ export default function Home() {
         features={[
           {
             title: "Diepe verbinding",
-            text: "Wij creëren een authentieke en vertrouwde sfeer waarin jij je gezien, gehoord, serieus genomen en gewaardeerd voelt. We luisteren onbevooroordeeld naar elkaar, waardoor ervaringen gedeeld kunnen worden en een emotionele verbinding ontstaat. Door samen activiteiten te ondernemen en open gesprekken te voeren, helpen we je niet alleen ",
+            text: "Wij creëren een authentieke en vertrouwde sfeer waarin jij je gezien, gehoord, serieus genomen en gewaardeerd voelt. We luisteren onbevooroordeeld naar elkaar, waardoor ervaringen gedeeld kunnen worden en een emotionele verbinding ontstaat. Door samen activiteiten te ondernemen en open gesprekken te voeren, helpen we je niet alleen dichter bij jezelf te komen, maar ook de band met je moeder of dochter te versterken.",
           },
           {
             title: "Veiligheid",

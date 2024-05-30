@@ -4,6 +4,10 @@ import ColorBanner from "@/components/ColorBanner";
 import QuoteBanner from "@/components/QuoteBanner";
 import WhatToExpect from "@/components/WhatToExpect";
 import ImageSwiper from "@/components/ImageSwiper";
+import Testimonials from "@/components/Testimonials";
+import BannerWithQuote from "@/components/BannerWithQuote";
+import Image from "next/image";
+import Schedule from "@/components/Schedule";
 
 const features = [
   {
@@ -44,105 +48,239 @@ const features = [
   },
 ];
 
+const testimonials = [
+  {
+    title: "Verwend en Verzorgd: Mijn Magische Retreat",
+    text: "Een magische, liefdevolle en helende ervaring op een prachtige plek. Ik voelde me verwend, verzorgd, veilig en geliefd. Perfecte balans voor Body, Mind & Soul. Mijn ziel werd opgelicht door liefde, warmte en vertrouwen. Een onvergetelijke ervaring die mij dichter bij mezelf bracht.’",
+    name: "Anne",
+    avatar: "/anne.jpeg",
+  },
+  {
+    title: "Journey naar Zelfliefde",
+    text: "Op het retreat voelde ik meteen een fijne energie en het gevoel dat je alles kunt loslaten. De groep en het team waren liefdevol en alles was tot in de puntjes verzorgd. Ik ervoer liefde, vreugde, en het loslaten van het oude. Ik ben ongelooflijk dankbaar voor deze ervaring!",
+    name: "Nathalie",
+    avatar: "/nathalie.jpeg",
+  },
+  {
+    title: "Transformatie Week",
+    text: "Het was een geweldige en transformerende week voor mij. Dankbaar dat ik bij jullie mocht zijn.",
+    name: "Christel",
+    avatar: "/christel.jpeg",
+  },
+];
+
+const retreat_list = [
+  {
+    text: "Vijf luxe overnachtingen:",
+    description:
+      "Verblijf in een comfortabele 2-persoonskamer, speciaal voor moeder-dochter duo's.",
+  },
+  {
+    text: "Persoonlijke aandacht:",
+    description:
+      "Maximaal 10/11 deelnemers voor een intieme en persoonlijke sfeer.",
+  },
+  {
+    text: "Gezonde en heerlijke maaltijden:",
+    description:
+      "Geniet van smakelijke, glutenvrije maaltijden (ontbijt, lunch en diner).",
+  },
+  {
+    text: "Vervoer:",
+    description: "Lokaal transport is volledig geregeld.",
+  },
+  {
+    text: "Dagelijkse activiteiten:",
+    description:
+      "Verwen jezelf met workshops zoals massage, energetische healing, transformational cupping, wandeltochten en intensieve begeleiding.",
+  },
+  {
+    text: "Onvergetelijke ervaringen:",
+    description:
+      "En een fotoshoot om deze mooie herinnering voor altijd vast te leggen.",
+  },
+  {
+    text: "En nog veel meer verrassingen!",
+    description: "",
+  },
+];
+
+const scheduleItems = [
+  { time: "07:00", description: "Snack met thee/koffie" },
+  {
+    time: "08:00",
+    description:
+      "Verbind met je lichaam door yoga, een hike, of andere beweging.",
+  },
+  { time: "09:30", description: "Heerlijk gezond ontbijtje." },
+  { time: "11:00-13:00", description: "Activiteit." },
+  { time: "13:30", description: "Lunch." },
+  {
+    time: "14:30-16:30",
+    description:
+      "Vrije tijd: relax bij het zwembad, lees een boek, of doe waar je zin in hebt.",
+  },
+  { time: "16:30-18:30", description: "Activiteit" },
+  { time: "19:00", description: "Gezond en heerlijk diner." },
+  {
+    time: "20:00",
+    description:
+      "Vrije tijd: iets voor jezelf doen, sound healing, een privésessie, of een feestavond.",
+  },
+];
+
 export default function index() {
   return (
     <>
-      <div className="bg-[#F2E7D4]">
-        <SideImageContentBanner
-          title="Het mother-daughter heart connection retreat"
-          buttonLabel="Ja, ik wil hier bij zijn!"
-          openInNewTab={true}
-          buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSd-Uf0Iqw8l4TjsL53ep0yQKUGeqTXeWWIlWnH3clO14kAakw/viewform"
-          imageSrc="/retreats_page.jpeg">
-          <p className="font-bold text-xl">Willen jullie:</p>
-          <ul className="mt-4 flex flex-col gap-2 first-letter tracking-tight">
-            {[
-              "De band met je moeder of dochter verdiepen?",
-              "Meer verbinding met jezelf ervaren?",
-              "Vreugde in je leven vergroten?",
-              "Even tot rust komen en opladen?",
-              "Leren hoe je je diep kunt verbinden met je lichaam?",
-              "Gelijkgestemde vrouwen ontmoeten waarbij je helemaal jezelf kunt zijn?",
-              "Inzichten krijgen om meer vanuit verbinding met jezelf te leven?",
-              "Meer vertrouwen in jezelf ontwikkelen?",
-              "Heerlijk in de watten gelegd worden?",
-              "Bewust met je lichaam bezig zijn door gezonde voeding en beweging?",
-              "Iets nieuws ervaren?",
-            ].map((text, index) => (
-              <li className="flex flex-row gap-2 items-start" key={index}>
-                <img
-                  src="/Corazon_BeeldmerkBruin.png"
-                  alt=""
-                  className="h-6 w-6 mt-1"
-                />
-                <p
-                  className="p-0 m-0"
-                  dangerouslySetInnerHTML={{ __html: text }}
-                />
-              </li>
-            ))}
-          </ul>
-          <p className="mt-5 font-bold">
-            Dan is het Blossom Your Heart Retreat de plek voor jullie op de
-            volgende data:
-          </p>
-          <p className="bg-white text-black rounded-full py-1 px-3 mt-4 shadow">
-            24 tot 28 november 2023
-          </p>
-          <p className="bg-white text-black rounded-full py-1 px-3 mt-4 shadow">
-            12 tot 16 april 2024
-          </p>
-          <p className="bg-white text-black rounded-full py-1 px-3 mt-4">
-            27 september tot 2 oktober 2024
-          </p>
-          <p className="bg-white text-black rounded-full py-1 px-3 mt-4">
-            25 tot 29 november 2024
-          </p>
-          <p className="mt-5 font-bold">
-            Geef op het contactformulier jullie voorkeursdata aan.
-          </p>
-        </SideImageContentBanner>
+      <div className="relative flex min-h-screen md:h-screen">
+        <div className="relative w-full h-auto md:h-full">
+          <Image
+            src="/retreat-main.jpg"
+            alt="Retreat Main"
+            layout="fill"
+            objectFit="cover"
+            className="w-full h-full"
+          />
+          <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white bg-black bg-opacity-25 p-4 text-center">
+            <h1 className="text-5xl font-bold mb-4">Het leven samen vieren!</h1>
+            <p className="text-lg mb-4 font-sans">
+              Voor moeders en dochters die klaar zijn voor magie op Ibiza.
+            </p>
+            <p className="text-lg mb-4 font-sans">
+              5 dagen op een innerlijke reis voor een diepere verbinding met
+              jezelf en elkaar.
+            </p>
+            <button className="mt-4 bg-[#AE8466] text-white font-bold py-2 px-4 rounded">
+              Ja, let’s go!
+            </button>
+          </div>
+        </div>
       </div>
+
       <ColorBanner />
       <QuoteBanner />
-      <Features
-        features={features}
-        title="Het Blossom Your Heart Retreat draait om de volgende pijlers:"
+      <Testimonials
+        title="Mooie woorden van de Corazón tribe"
+        testimonials={testimonials}
+        ctaLabel="Join Our Next Retreat"
+        ctaLink="/next-retreat"
+        showCTA={true}
+        openCTAInNewTab={true}
+        bgColor="#FFFFFF"
       />
       <ColorBanner />
       <QuoteBanner />
-      <ImageSwiper
-        title="Een sfeerimpressie"
-        images={[
+      <BannerWithQuote
+        imagePosition="left" // or "right"
+        imageSrc="/about_1.jpeg"
+        title="Ontspan, verbind en geniet!"
+        paragraphs={[
+          "Stel je voor: een prachtige plek op Ibiza waar je samen met je moeder of dochter 6 dagen doorbrengt, ver weg van alles. Je wordt wakker in een oase van rust. Op de achtergrond hoor je het gezang van krekels en vogels. Is het niet fijn?! Je hoeft aan niets te denken. Alles wordt geregeld. Jij mag lekker in de relaxstand. Je lichaam en geest krijgen de gelegenheid om tot rust te komen. En te genieten. Van de plek, het gezonde eten, massages, yoga, kringgesprekken, stiltemomenten, dans en vooral van aandacht en liefde voor elkaar. En zeker niet alleen maar serieus. Het is juist de bedoeling dat we veel plezier gaan maken en dat jullie gaan stralen. Alles is erop gericht om dichter bij jezelf te komen, elkaar beter te begrijpen en de band tussen jullie te verdiepen.",
+          "Het is een kans om te genieten van elkaars gezelschap en tegelijkertijd nieuwe inzichten en inspiratie op te doen die je mee naar huis neemt. Dit is een cadeau aan jezelf en je moeder of dochter om te ervaren hoe bijzonder het is om deze tijd met elkaar te delen, en hoe dit jullie band kan versterken.",
+        ]}
+        showButton={false}
+        colorWay="dark"
+      />
+      <ColorBanner />
+      <QuoteBanner />
+      <SideImageContentBanner
+        imageSrc="/merel_with_heart.jpg"
+        title='"Heart 2 heart retreat"'
+        openInNewTab={true}
+        buttonLabel="Ja, ik wil hier bij zijn!"
+        buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSd-Uf0Iqw8l4TjsL53ep0yQKUGeqTXeWWIlWnH3clO14kAakw/viewform"
+      >
+        <h3 className="font-semibold text-xl">
+          Een onvergetelijke tijd samen voor{" "}
+          <span className="underline">€1.888,00 per persoon</span>!
+        </h3>
+        <ul className="mt-4 flex flex-col gap-2 first-letter tracking-tight">
+          {retreat_list.map((item, index) => (
+            <li className="flex flex-row gap-2 items-start" key={index}>
+              <Image
+                src="/Corazon_BeeldmerkBruin.png"
+                alt=""
+                className="h-6 w-6 mt-1"
+                width={24}
+                height={24}
+              />
+              <p className="p-0 m-0">
+                <span className="font-bold">{item.text}</span>{" "}
+                {item.description}
+              </p>
+            </li>
+          ))}
+        </ul>
+        <p className="pt-5 italic">
+          * Neem contact met ons op bij drie personen of voor
+          betalingsmogelijkheden in termijnen.
+        </p>
+        <h3 className="mt-5 font-bold">
+          Dit klinkt fantastisch! We schrijven ons in
+        </h3>
+      </SideImageContentBanner>
+      <ColorBanner />
+      <QuoteBanner />
+      <Features
+        colorWay="dark"
+        title="3 pilaren"
+        features={[
           {
-            title: "Retreat Sider Image",
-            src: "/retreat_slider_1.jpeg",
+            title: "Rust",
+            text: "Gedurende het retreat hoef je nergens over na te denken, alles is geregeld. Je ervaart hoe het is om écht even te zijn. En je aanwezig te voelen in je lichaam. Je gaat van hoofd naar hart. Van stress naar ontspanning. Je laadt weer helemaal op en komt in je kracht. Bruisend van energie en nieuwe ideeën keer je terug naar huis.",
           },
           {
-            title: "Retreat Sider Image",
-            src: "/about_4.jpeg",
+            title: "Verbinding",
+            text: "Voel een diepe verbinding met jezelf en je moeder of dochter. Je gaat jezelf weer zien, maar ook elkaar. Jullie begrijpen elkaar beter, krijgen meer compassie en de band wordt sterker dan ooit.",
           },
           {
-            title: "Retreat Sider Image",
-            src: "/about_1.jpeg",
-          },
-          {
-            title: "Retreat Sider Image",
-            src: "/retreat_slider_4.jpeg",
-          },
-          {
-            title: "Retreat Sider Image",
-            src: "/retreat_slider_5.jpeg",
-          },
-          {
-            title: "Retreat Sider Image",
-            src: "/group_picture.jpg",
+            title: "Plezier",
+            text: "Geniet van gelukkige momenten samen. Het hoeft allemaal niet zo serieus. Lekker lachen, nieuwe ervaringen opdoen en plezier maken staan centraal. Creëer herinneringen die je een leven lang zal koesteren.",
           },
         ]}
       />
       <ColorBanner />
       <QuoteBanner />
-      <WhatToExpect />
+      <BannerWithQuote
+        imageSrc="/retreat_slider_1.jpeg"
+        title="Ontmoet het team"
+        paragraphs={[
+          "Wij, Cornelie en Merel, zijn niet de enigen die jullie dit bijzondere gevoel gaan geven. We hebben een liefdevol team samengesteld dat ieder op zijn eigen manier veel voor ons betekent. Deze professionals, elk een expert in hun vakgebied, hebben ons de afgelopen jaren geïnspireerd en geholpen dichter bij onszelf te komen. Bij hen voelen we ons veilig en gewaardeerd, en we koesteren hun authenticiteit, oprechtheid en liefde. Met veel trots stellen we hen aan jullie voor...",
+        ]}
+        actionLink="/team"
+        actionLabel="Ja, ik wil meer over hen weten"
+      />
+      <ColorBanner />
+      <QuoteBanner />
+      <Schedule
+        title="Hoe ziet een dag eruit op Corazón Retreat?"
+        subtitle="De tijden kunnen wat afwijken, maar dit geeft je een idee van hoe een dag eruitziet. De activiteiten variëren dagelijks en behandelen steeds één van onze kernpijlers: rust, verbinding met jezelf of anderen en plezier."
+        items={scheduleItems}
+      />
+      <ColorBanner />
+      <QuoteBanner />
+      <Features
+        colorWay="dark"
+        title="Wat kunnen jullie nog meer verwachten?"
+        features={[
+          {
+            title: "Kennismaking",
+            text: "Ons retreat begint met een persoonlijk kennismakingsgesprek. We kunnen niet wachten om jullie als moeder en dochter duo te leren kennen! Deze 6 onvergetelijke dagen samen worden nóg specialer als we jullie wensen en behoeften begrijpen. Het programma van het retreat staat in grote lijnen vast, maar we zien het ook als een co-creatie waarin we graag jullie intenties integreren.",
+          },
+          {
+            title: "Informatieve mail",
+            text: "Kort daarna ontvangen jullie een mail met onze spelregels, een vragenlijst en alle essentiële informatie: wat je moet meenemen en waar je aan moet denken. Zo kunnen jullie je volledig voorbereiden op het retreat en ontspannen aan deze bijzondere reis beginnen.",
+          },
+          {
+            title: "Het retreat begint...",
+            text: "Het moment is eindelijk daar! We halen jullie op van de luchthaven in Ibiza. De komende week belooft pure ontspanning, diepe verbinding met jezelf en elkaar, en vooral veel plezier. Jullie gaan genieten van onvergetelijke momenten en vol nieuwe energie en inspiratie terugkeren.",
+          },
+          {
+            title: "Reünie!",
+            text: "Hoe geweldig is het om elkaar na zo’n bijzondere week online weer te zien? We delen onze ervaringen, reflecteren samen en praten bij. We bespreken ook hoe we de nieuwe ideeën en inzichten kunnen integreren in het dagelijks leven.",
+          },
+        ]}
+      />
       <ColorBanner />
       <QuoteBanner />
       <div className="bg-[#F4F3ED]">
@@ -177,7 +315,8 @@ export default function index() {
                   src="https://www.youtube.com/embed/OetZ_oGLrMQ?si=orLwUO1E8v3-Ufbr"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen></iframe>
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
           </div>
@@ -185,61 +324,35 @@ export default function index() {
       </div>
       <ColorBanner />
       <QuoteBanner />
-      <SideImageContentBanner
-        imageSrc="/merel_with_heart.jpg"
-        title='"Blossom Your Heart Retreat"'
-        openInNewTab={true}
-        buttonLabel="Ja, ik wil hier bij zijn!"
-        buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSd-Uf0Iqw8l4TjsL53ep0yQKUGeqTXeWWIlWnH3clO14kAakw/viewform">
-        <ul className="mt-4 flex flex-col gap-2 first-letter tracking-tight">
-          {[
-            "Blossom Your Heart Retreat investering: <span class='font-bold'>€1.888,00. per persoon</span>.",
-            "Neem bij 3 personen of voor betaling in termijnen contact met ons op.",
-            "Vier overnachtingen",
-            "2-persoonskamer voor moeder en dochter",
-            "Alle gezonde en glutenvrije maaltijden (ontbijt, lunch en diner)",
-            "Lokaal transport",
-            "Dagelijkse workshops (inclusief massage, Energetische Healing, Transformational Cupping, wandeltocht, intensieve begeleiding)",
-            "En nog veel meer verrassingen",
-          ].map((text, index) => (
-            <li className="flex flex-row gap-2 items-start" key={index}>
-              <img
-                src="/Corazon_BeeldmerkBruin.png"
-                alt=""
-                className="h-6 w-6 mt-1"
-              />
-              <p
-                className="p-0 m-0"
-                dangerouslySetInnerHTML={{ __html: text }}
-              />
-            </li>
-          ))}
-        </ul>
-        <p className="mt-5 font-bold">
-          Dan is het Blossom Your Heart Retreat de plek voor jullie op de
-          volgende data
-        </p>
-        <p className="bg-white text-black rounded-full py-1 px-3 mt-4 shadow">
-          24 tot 28 november 2023
-        </p>
-        <p className="bg-white text-black rounded-full py-1 px-3 mt-4 shadow">
-          12 tot 16 april 2024
-        </p>
-        <p className="bg-white text-black rounded-full py-1 px-3 mt-4">
-          27 september tot 2 oktober 2024
-        </p>
-        <p className="bg-white text-black rounded-full py-1 px-3 mt-4">
-          25 tot 29 november 2024
-        </p>
-        <p className="mt-5 font-bold">
-          Geef op het contactformulier jullie voorkeursdata aan.
-        </p>
-        <p className="pt-5 italic font-bold">
-          * Het vliegticket is niet inbegrepen en dient zelf geboekt te worden.
-          Houd rekening met de vliegtijden en de start van het retreat
-          (uiterlijk 24 november om 11.00 uur)
-        </p>
-      </SideImageContentBanner>
+      <ImageSwiper
+        title="Een sfeerimpressie"
+        images={[
+          {
+            title: "Retreat Sider Image",
+            src: "/retreat_slider_1.jpeg",
+          },
+          {
+            title: "Retreat Sider Image",
+            src: "/about_4.jpeg",
+          },
+          {
+            title: "Retreat Sider Image",
+            src: "/about_1.jpeg",
+          },
+          {
+            title: "Retreat Sider Image",
+            src: "/retreat_slider_4.jpeg",
+          },
+          {
+            title: "Retreat Sider Image",
+            src: "/retreat_slider_5.jpeg",
+          },
+          {
+            title: "Retreat Sider Image",
+            src: "/group_picture.jpg",
+          },
+        ]}
+      />
     </>
   );
 }

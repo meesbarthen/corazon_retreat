@@ -1,3 +1,5 @@
+import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 
 type Testimonial = {
@@ -8,25 +10,29 @@ type Testimonial = {
 };
 
 type TestimonialsProps = {
+  title: string;
   testimonials: Testimonial[];
   ctaLabel?: string;
   ctaLink?: string;
   showCTA?: boolean;
   openCTAInNewTab?: boolean;
+  bgColor?: string; // New bgColor prop
 };
 
 export default function Testimonials({
+  title,
   testimonials,
   ctaLabel,
   ctaLink,
   showCTA = true,
   openCTAInNewTab = false,
+  bgColor = "#F2E7D4", // Default background color
 }: TestimonialsProps) {
   return (
-    <div className="bg-[#F2E7D4] py-16">
+    <div className="py-16" style={{ backgroundColor: bgColor }}>
       <div className="max-w-7xl mx-auto space-y-12 px-8">
         <div className="text-center space-y-4">
-          <h1 className="text-3xl sm:text-4xl font-bold">Mooie woorden</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold">{title}</h1>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 justify-items-center gap-y-8">
           {testimonials.map((item) => (
@@ -41,10 +47,12 @@ export default function Testimonials({
                 </p>
               </div>
               <div className="mt-8 flex flex-col items-center">
-                <img
+                <Image
                   className="w-16 h-16 rounded-full mb-2 object-cover object-center"
                   src={item.avatar}
                   alt={item.name}
+                  width={64}
+                  height={64}
                 />
                 <div className="text-center mt-2">
                   <p className="font-bold">{item.name}</p>
@@ -55,13 +63,13 @@ export default function Testimonials({
         </div>
         {showCTA && ctaLink && ctaLabel && (
           <div className="mt-12 text-center">
-            <a
+            <Link
               target={openCTAInNewTab ? "_blank" : "_self"}
               href={ctaLink}
               className="inline-block rounded-md bg-[#AE8466] px-5 py-3 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
             >
               {ctaLabel}
-            </a>
+            </Link>
           </div>
         )}
       </div>

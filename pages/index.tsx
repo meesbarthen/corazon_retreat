@@ -16,19 +16,19 @@ const testimonials = [
     title: "Hart Aan, Verstand Uit",
     text: "Woorden schieten tekort voor mijn ervaring bij Corazón Retreat. Met een gevoel van opwinding werd ik warm ontvangen door Merel en Cornelie. Ik voelde me gezien en gehoord, en kon mezelf zijn. De veilige sfeer die zij creëerden, zonder oordeel, was een geschenk. Zowel praten als stil zijn werd geaccepteerd. De kracht van hun organisatie is voelbaar. Het was verstand uit en hart aan.",
     name: "Christel",
-    avatar: "LOTTE.png",
+    avatar: "/LOTTE.png",
   },
   {
     title: "Thuis bij Corazón",
     text: "De plek voelt zo speciaal, het uitzicht, de inrichting, de sfeer, maar vooral jullie buitengewoon lieve energie. Heel erg bedankt dat ik me echt thuis mocht voelen!",
     name: "Anoush",
-    avatar: "anoush.jpeg",
+    avatar: "/anoush.jpeg",
   },
   {
     title: "Een Magische Ervaring om Nooit te Vergeten",
     text: "Wow, wat een gastvrijheid! Wat een liefde! Wat een magische plek! We hadden een 'once in a lifetime' ervaring met jou en Anna. De hele setting, de fantastische warmte, het weer, de veganistische ervaring, de retraite, de rituelen, te veel om op te noemen. We zullen dit nooit en te nimmer vergeten! xxx",
     name: "Marlous",
-    avatar: "Marlous.jpeg",
+    avatar: "/Marlous.jpeg",
   },
 ];
 
@@ -116,29 +116,19 @@ export default function Home() {
       <Hero />
       <ColorBanner />
       <QuoteBanner>
-        <p className="text-xl leading-6 text-white p-10 text-center">
-          <strong className="sans_titel">
-            Welkom in ons huis op Ibiza voor het moeder-dochter retreat
-          </strong>
+        <p className="text-3xl leading-relaxed text-white p-5 md:p-10 text-center">
+          Even helemaal jezelf kunnen zijn!
         </p>
       </QuoteBanner>
       <SideImageContentBanner
         title="6 dagen vol liefde, die helemaal in het teken staan van jou!"
         imageSrc="/first_photo.jpg"
         buttonLabel={
-          <span>
-            Ja dit wil ik met mijn <span className="underline">moeder</span> of{" "}
-            <span className="underline">dochter</span>!
+          <span className="text-lg">
+            Ja dit wil ik met mijn moeder of dochter!
           </span>
         }
         buttonLink="/retreats"
-        secondButtonLabel={
-          <span>
-            Ja dit wil ik alleen of met een{" "}
-            <span className="underline">vriendin</span>!
-          </span>
-        }
-        secondButtonLink="/retreats"
         showButton={true}
         showSecondButton={true}
       >
@@ -171,6 +161,7 @@ export default function Home() {
       <ColorBanner />
       <QuoteBanner />
       <Testimonials
+        title="Mooie woorden"
         testimonials={testimonials}
         ctaLabel="Join Our Next Retreat"
         ctaLink="/next-retreat"
@@ -197,8 +188,6 @@ export default function Home() {
       <Features
         colorWay="dark"
         title="Met diepe verbinding, veiligheid en oprechte aandacht"
-        subtitle=" Bij ons retreat draait alles om verbinding met jezelf en anderen. In
-        het bijzonder met moeders en dochters."
         features={[
           {
             title: "Diepe verbinding",

@@ -129,7 +129,6 @@ const scheduleItems = [
   {
     time: "07:00",
     description: "Snack met thee/koffie",
-    image: "/homepage-slider2.jpeg",
   },
   {
     time: "08:00",
@@ -143,7 +142,7 @@ const scheduleItems = [
     image: "/sfeerimpressie_2.jpeg",
   },
   { time: "11:00-13:00", description: "Activiteit." },
-  { time: "13:30", description: "Lunch." },
+  { time: "13:30", description: "Lunch.", image: "/homepage-slider2.jpeg" },
   {
     time: "14:30-16:30",
     description:

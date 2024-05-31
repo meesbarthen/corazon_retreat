@@ -22,10 +22,10 @@ export default function Hero() {
           <p className="mt-4 text-xl md:text-2xl font-sans">
             6 dagen rust, verbinding en genieten op Ibiza
           </p>
-          <div className="mt-4">
+          <div className="mt-5">
             <Link
               href="/retreats"
-              className="bg-[#AE8466] text-white font-semibold py-2 px-4 rounded"
+              className="rounded-md bg-[#AE8466] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 font-sans"
             >
               Meer informatie over retreats
             </Link>

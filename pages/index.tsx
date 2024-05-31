@@ -99,6 +99,8 @@ const firstRetreat = {
   imageSrc: "/mama-merel.jpg",
   title: "Moeder-dochter Heart 2 Heart retreat",
   date: "27 september t/m 2 oktober 2024",
+  description:
+    "6 dagen van rust, gezond eten en activiteiten om de relatie met je moeder of dochter te verdiepen.",
   buttonText: <span>Ja, ik wil meer informatie</span>,
   buttonLink: "/retreats",
   openInNewTab: false,
